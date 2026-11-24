@@ -151,6 +151,20 @@ API ลอยพร้อมกัน: `POST /api/couples/<token>/ready/` ส่
 
 แบบในเว็บเป็นภาพวาด SVG/CSS และวัตถุรูปภาพที่เลือกได้ ไม่ใช่โมเดล 3D แบบหมุนกล้อง
 
+## นำขึ้น Render (Web Service ฟรี + Postgres ฟรี)
+
+โปรเจกต์มี `render.yaml` (Blueprint) และ `build.sh` พร้อมแล้ว
+
+1. Render → **New → Blueprint** → เชื่อม GitHub แล้วเลือก repo นี้ → Render จะสร้าง Web Service `khuenloy` และฐานข้อมูล `khuenloy-db` ให้
+2. ใส่ค่า `DJANGO_SUPERUSER_USERNAME`, `DJANGO_SUPERUSER_EMAIL`, `DJANGO_SUPERUSER_PASSWORD` เพื่อสร้างบัญชีแอดมินตอน build
+3. กด **Apply** รอ build เสร็จ เปิด `https://<ชื่อ>.onrender.com` และ `/admin/`
+
+สิ่งที่ตั้งค่าอัตโนมัติ: `DATABASE_URL` จากฐานข้อมูล, `DJANGO_SECRET_KEY` แบบสุ่ม, `DJANGO_DEBUG=0`, โดเมน `RENDER_EXTERNAL_HOSTNAME` เข้า `ALLOWED_HOSTS` และ `CSRF_TRUSTED_ORIGINS`, HTTPS หลัง proxy, IP ผู้ใช้สำหรับ rate limit, ไฟล์ static ผ่าน WhiteNoise
+
+ดิสก์ของ Web Service ฟรีจะถูกล้างทุกครั้งที่ deploy หรือเมื่อเครื่องหลับ ระบบจึงเก็บไฟล์อัปโหลด (รูปบนกระทง แบบกระทง เพลง) ไว้ในฐานข้อมูล (`pond.storage.DatabaseStorage`, เสิร์ฟที่ `/media/...`) เปิดเองได้ด้วย `DJANGO_MEDIA_IN_DATABASE=1` เพลงควรเล็ก (แนะนำ ≤ 10 MB) เพราะโหลดทั้งไฟล์ต่อคำขอ
+
+ข้อจำกัดแพ็กเกจฟรี: เว็บหลับเมื่อไม่มีคนใช้ ~15 นาที เปิดครั้งแรกหลังหลับรอราว 1 นาที / Postgres ฟรีของ Render มีวันหมดอายุ (ตรวจเงื่อนไขล่าสุดในหน้า database) ถ้าต้องการใช้ยาว ให้อัปเกรด หรือใช้ Postgres ฟรีที่อื่น (เช่น Neon) แล้วใส่ `DATABASE_URL` เอง
+
 ## การนำขึ้นเซิร์ฟเวอร์จริง
 
 โครงการนี้เป็น Django ที่ต้องมี Python server และพื้นที่ดิสก์ถาวรสำหรับ SQLite/รูปภาพ ยังไม่ได้เผยแพร่เป็นเว็บไซต์สาธารณะ ไม่รองรับการ deploy เป็น static site หรือ Cloudflare Worker โดยตรง
