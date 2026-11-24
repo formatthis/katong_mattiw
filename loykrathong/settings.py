@@ -58,6 +58,18 @@ DATABASE_URL = os.environ.get('DATABASE_URL')
 if DATABASE_URL:
     import dj_database_url
     DATABASES = {'default': dj_database_url.parse(DATABASE_URL, conn_max_age=600, conn_health_checks=True)}
+    # Render's internal hostname (dpg-…-a) only resolves on the private network, not in the build
+    # step. If it can't be resolved, fall back to the external hostname with SSL.
+    _db = DATABASES['default']
+    _host = _db.get('HOST') or ''
+    if _host.startswith('dpg-') and '.' not in _host:
+        import socket
+        try:
+            socket.getaddrinfo(_host, None)
+        except OSError:
+            _region = os.environ.get('RENDER_POSTGRES_REGION', 'singapore')
+            _db['HOST'] = f'{_host}.{_region}-postgres.render.com'
+            _db.setdefault('OPTIONS', {})['sslmode'] = 'require'
 else:
     DATABASES = {'default': {
         'ENGINE': 'django.db.backends.sqlite3',
