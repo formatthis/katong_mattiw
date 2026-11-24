@@ -1,0 +1,182 @@
+/* Float together: big centred preview, drifting river, framed couple cover, 3·2·1 and ceremony. */
+:root{--cover-gold:#e9cf98;--cover-gold-soft:#e9cf9833}
+
+/* ---------- Big, centred preview while creating ---------- */
+.pond-preview{left:50%;top:61%;transform:translate(-50%,-50%);z-index:3}
+.pond-preview .preview-boat{width:clamp(200px,30vw,310px);height:auto;aspect-ratio:1.15;filter:drop-shadow(0 12px 18px #00141a99) drop-shadow(0 0 26px #f5cf8a2e)}
+.pond-preview .own-preview{position:relative}
+.pond-preview .own-preview:before{content:'';position:absolute;left:50%;top:70%;width:150%;height:42%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(ellipse,#f6d79a30,#f6d79a0c 45%,transparent 70%);z-index:-1;animation:preview-glow 4.5s ease-in-out infinite;pointer-events:none}
+.pond-preview .own-preview>span{margin-top:-20px;font-size:13px;padding:5px 15px;position:relative}
+.scene-lantern .pond-preview{left:50%;top:50%}
+.scene-lantern .pond-preview .preview-boat{width:clamp(150px,22vw,230px)}
+@keyframes preview-glow{0%,100%{opacity:.7;scale:1}50%{opacity:1;scale:1.08}}
+
+/* ---------- River: lanes drift left → right in a loop ---------- */
+.drift-lane{position:absolute;left:0;width:100%;height:0;pointer-events:none;transform:translateX(var(--x,50%))}
+.drift-lane>.floating-krathong,.drift-lane>.pair-float{left:0;top:0;scale:var(--depth-scale,1)}
+.drift-lane>.floating-krathong{pointer-events:auto}
+.scene-krathong .drift-lane{animation:river-drift var(--drift-duration,130s) linear var(--drift-delay,0s) infinite}
+.drift-lane:hover,.drift-lane:focus-within,.drift-lane.arriving{animation-play-state:paused}
+.floating-krathong.awaiting-arrival{opacity:0}
+.floating-krathong.arrived{animation:arrive-glow 2.2s ease-out}
+.pair-float .floating-krathong.just-launched{animation:none}
+@keyframes river-drift{from{transform:translateX(-140px)}to{transform:translateX(calc(100% + 140px))}}
+@keyframes arrive-glow{0%{filter:drop-shadow(0 0 22px #f8d995cc) brightness(1.25)}100%{filter:drop-shadow(0 7px 9px #00191355)}}
+
+/* The boat that glides from the preview to the water. */
+.departing-boat{position:absolute;z-index:6;pointer-events:none;will-change:transform;transform-origin:50% 50%;filter:drop-shadow(0 10px 14px #00151a99) drop-shadow(0 0 24px #f5cf8a44)}
+.departing-boat>.boat-art{width:100%;height:100%;animation:none}
+.departing-boat:after{content:'';position:absolute;left:6%;right:6%;bottom:2%;height:18%;border-radius:50%;background:radial-gradient(ellipse,#ffd99355,transparent 70%);filter:blur(5px);z-index:-1}
+
+/* ---------- Framed couple cover ---------- */
+.pair-cover{position:absolute;left:50%;top:57%;transform:translate(-50%,-50%);z-index:4;width:min(580px,calc(100% - 28px));pointer-events:none}
+.cover-frame{position:relative;pointer-events:auto;text-align:center;padding:22px 22px 20px;border-radius:22px;border:1px solid #e9cf9880;background:radial-gradient(ellipse at 50% 0%,#f3d18f1c,transparent 60%),linear-gradient(165deg,#123634e8,#0a2327ee);box-shadow:0 20px 70px #00141a99,0 0 0 1px #0a1f2280,0 0 40px #f0c97a14 inset;backdrop-filter:blur(10px);transition:background .5s,border-color .5s,box-shadow .5s}
+.cover-frame:before{content:'';position:absolute;inset:7px;border:1px solid var(--cover-gold-soft);border-radius:16px;pointer-events:none}
+.cover-ornament{position:absolute;inset:13px;pointer-events:none;opacity:.85;background:
+  linear-gradient(var(--cover-gold),var(--cover-gold)) left top/24px 1.5px,linear-gradient(var(--cover-gold),var(--cover-gold)) left top/1.5px 24px,
+  linear-gradient(var(--cover-gold),var(--cover-gold)) right top/24px 1.5px,linear-gradient(var(--cover-gold),var(--cover-gold)) right top/1.5px 24px,
+  linear-gradient(var(--cover-gold),var(--cover-gold)) left bottom/24px 1.5px,linear-gradient(var(--cover-gold),var(--cover-gold)) left bottom/1.5px 24px,
+  linear-gradient(var(--cover-gold),var(--cover-gold)) right bottom/24px 1.5px,linear-gradient(var(--cover-gold),var(--cover-gold)) right bottom/1.5px 24px;background-repeat:no-repeat}
+.cover-kicker{display:flex;align-items:center;justify-content:center;gap:10px;margin:0;font-size:12px;letter-spacing:.5px;color:#dcc18c}
+.cover-kicker:before,.cover-kicker:after{content:'';width:46px;height:1px;background:linear-gradient(90deg,transparent,#dcc18c99)}
+.cover-kicker:after{transform:scaleX(-1)}
+.cover-kicker span:before,.cover-kicker span:after{content:'◆';font-size:7px;vertical-align:middle;margin:0 7px;color:#e9cf98aa}
+.cover-names{display:flex;align-items:center;justify-content:center;gap:10px;margin:6px 0 4px;font-size:22px;font-weight:600;line-height:1.5;color:#f4dcaf;min-width:0}
+.cover-names span{min-width:0;max-width:42%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cover-names svg{flex:0 0 auto;width:20px;height:20px;fill:#f2a9b8;stroke:none;filter:drop-shadow(0 0 8px #f2a9b888);animation:heart-beat 1.8s ease-in-out infinite}
+.cover-boats{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:6px;align-items:end;margin:2px 0 4px}
+.cover-boats:before{content:'';position:absolute;left:8%;right:8%;bottom:16%;height:34%;border-radius:50%;background:radial-gradient(ellipse,#f5d69a26,transparent 70%);pointer-events:none}
+.cover-boat{margin:0;display:flex;flex-direction:column;align-items:center;min-width:0}
+.cover-art{width:min(210px,100%);aspect-ratio:1.15;animation:bob 6s ease-in-out infinite;transition:filter .4s}
+.cover-boat:nth-child(2) .cover-art{animation-delay:-2.6s}
+.cover-boat.is-ready .cover-art{filter:drop-shadow(0 0 20px #f8d48dbb) brightness(1.08)}
+.cover-boat.is-empty .cover-art{animation:none}
+.cover-placeholder{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;width:72%;height:72%;margin:9% auto 0;border:1.5px dashed #e9cf9855;border-radius:50%;color:#e9cf9899;background:radial-gradient(#e9cf980d,transparent 70%);animation:placeholder-breathe 2.6s ease-in-out infinite}
+.cover-placeholder svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:1.5}
+.cover-placeholder b{font-size:15px;font-weight:500}
+.cover-boat figcaption{margin-top:-4px;min-height:24px}
+.ready-chip{display:inline-flex;align-items:center;gap:4px;font-size:11px;padding:2px 10px;border-radius:20px;border:1px solid #c9d0ad33;color:#b6c5af;background:#071d2299;transition:all .3s}
+.ready-chip.is-ready{color:#1d3a2c;background:linear-gradient(135deg,#f5dca5,#e2bd78);border-color:#f5dca5;box-shadow:0 0 14px #f0cb8255}
+.cover-status{margin:4px auto 0;max-width:420px;font-size:14px;line-height:1.75;color:#cfd9c7;min-height:1.75em}
+.pair-launch{position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;gap:1px;margin:13px auto 0;min-width:min(300px,100%);padding:12px 26px 11px;border:0;border-radius:40px;color:#1d3529;background:linear-gradient(135deg,#f8e2ae,#e5bf78 55%,#d7a960);box-shadow:0 10px 30px #f0c06a40,0 0 0 1px #fff2cf80 inset;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.pair-launch:hover{transform:translateY(-1px);box-shadow:0 14px 36px #f0c06a5c,0 0 0 1px #fff2cf80 inset}
+.pair-launch:active{transform:translateY(1px) scale(.99)}
+.pair-launch:focus-visible{outline:2px solid #fff1cf;outline-offset:3px}
+.pair-launch-main{display:flex;align-items:center;gap:8px;font-size:18px;font-weight:600}
+.pair-launch svg{width:20px;height:20px;fill:#c8506a;stroke:none}
+.pair-launch small{font-size:12px;color:#3d5444;min-height:1em}
+.pair-launch-timer{position:absolute;left:0;bottom:0;height:3px;width:calc(var(--left,0) * 100%);background:#7b3446aa;transition:width .25s linear}
+.pair-launch.is-waiting{background:linear-gradient(135deg,#2c4c41,#20403a);color:#f1dcb0;box-shadow:0 0 0 1px #e9cf9866 inset}
+.pair-launch.is-waiting small{color:#c5d2bd}
+.pair-launch.is-waiting svg{fill:#f2a9b8;animation:heart-beat 1.2s ease-in-out infinite}
+.pair-launch.is-waiting .pair-launch-timer{background:#f2cf8a}
+.pair-launch.partner-ready{animation:launch-call 1.1s ease-in-out infinite}
+.pair-cover[data-stage=draft] .cover-frame,.pair-cover[data-stage=waiting] .cover-frame{background:radial-gradient(ellipse at 50% 0%,#f3d18f14,transparent 60%),linear-gradient(165deg,#123634d9,#0a2327e6)}
+/* During 3·2·1 the frame melts away and only the two boats stay on the water. */
+.pair-cover.is-counting .cover-frame{background:transparent;border-color:transparent;box-shadow:none;backdrop-filter:none}
+.pair-cover.is-counting .cover-frame:before,.pair-cover.is-counting .cover-ornament,.pair-cover.is-counting .cover-kicker,.pair-cover.is-counting .cover-status,.pair-cover.is-counting .pair-launch,.pair-cover.is-counting figcaption{opacity:0;transition:opacity .4s}
+.pair-cover.is-counting .cover-names{opacity:0;transition:opacity .4s}
+.pair-cover.is-counting .cover-art{filter:drop-shadow(0 0 22px #f8d48daa)}
+@keyframes heart-beat{0%,100%{transform:scale(1)}15%{transform:scale(1.18)}30%{transform:scale(.96)}45%{transform:scale(1.1)}}
+@keyframes placeholder-breathe{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes launch-call{0%,100%{box-shadow:0 10px 30px #f0c06a40,0 0 0 0 #f6d38f99}50%{box-shadow:0 10px 30px #f0c06a60,0 0 0 10px #f6d38f00}}
+
+/* ---------- 3 · 2 · 1 ---------- */
+.pair-countdown{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:clamp(104px,14%,150px);pointer-events:none}
+.countdown-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 28%,#03161c99,transparent 62%)}
+.countdown-ring{position:relative;width:clamp(120px,22vw,170px);aspect-ratio:1;display:grid;place-items:center}
+.countdown-ring svg{position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg)}
+.countdown-ring circle{fill:none;stroke-width:3}
+.ring-track{stroke:#e9cf9830}
+.ring-sweep{stroke:#f3d595;stroke-linecap:round;stroke-dasharray:339.3;stroke-dashoffset:0;filter:drop-shadow(0 0 6px #f3d595aa)}
+.ring-sweep.tick{animation:ring-sweep 1s linear both}
+#countdown-number{position:relative;font-size:clamp(64px,11vw,96px);font-weight:600;line-height:1;color:#fbe3b0;text-shadow:0 0 30px #f5c97a99,0 4px 18px #00141a}
+#countdown-number.tick{animation:count-pop 1s cubic-bezier(.2,.8,.3,1) both}
+#countdown-caption{position:relative;margin:12px 0 0;font-size:15px;color:#e8dcc0;text-shadow:0 2px 10px #00141a}
+.pair-countdown.is-go #countdown-number{font-size:clamp(48px,8vw,72px);animation:go-burst 1.2s ease-out both}
+.pair-countdown.is-go .ring-sweep,.pair-countdown.is-go .ring-track{animation:ring-go 1.2s ease-out both}
+.pair-countdown.is-go #countdown-caption,.pair-countdown.is-go .countdown-glow{animation:go-fade 1.2s ease-out both}
+@keyframes go-fade{0%,40%{opacity:1}100%{opacity:0}}
+@keyframes ring-sweep{from{stroke-dashoffset:0}to{stroke-dashoffset:339.3}}
+@keyframes count-pop{0%{opacity:0;scale:1.8}25%{opacity:1;scale:1}80%{opacity:1;scale:.96}100%{opacity:.2;scale:.85}}
+@keyframes go-burst{0%{opacity:0;scale:.6}30%{opacity:1;scale:1.12}100%{opacity:0;scale:1.4}}
+@keyframes ring-go{0%{opacity:1;scale:1}100%{opacity:0;scale:1.8}}
+
+/* ---------- Ceremony: wishes from both + a blessing from the system ---------- */
+.ceremony-object{display:none}
+/* Fireworks burst behind the wish card, never over its words. */
+.fireworks{z-index:6}
+.launch-ceremony{z-index:7;background:radial-gradient(ellipse at 50% 26%,#04192070,transparent 62%)}
+.ceremony-message{top:max(11%,84px);width:min(430px,90%);animation-delay:2.2s}
+.launch-ceremony.is-couple .ceremony-message{width:min(540px,92%);max-height:calc(100% - 150px);overflow:auto;animation-delay:2.8s;scrollbar-width:thin}
+.ceremony-message>span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ceremony-couple{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0 12px;text-align:left}
+.ceremony-couple[hidden]{display:none}
+.ceremony-wish{border:1px solid #e8cb8e33;border-radius:12px;padding:10px 12px;background:#06202666;min-width:0}
+.ceremony-wish-head{display:flex;align-items:center;gap:8px;min-width:0}
+.ceremony-avatar{flex:0 0 auto;width:34px;height:34px;border-radius:50%;object-fit:cover;border:1px solid #e9cf9866;overflow:hidden;display:block}
+span.ceremony-avatar{border:0}
+span.ceremony-avatar .boat-art{width:34px;height:30px}
+.ceremony-wish strong{font-size:14px;font-weight:600;color:#f1d9ab;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ceremony-message .ceremony-wish p{display:block;-webkit-line-clamp:unset;overflow:visible;margin:6px 0 0;font-size:14px;line-height:1.7;color:#d7dfcf;white-space:pre-wrap}
+.ceremony-blessing{position:relative;margin:4px 0 12px;padding:12px 14px 11px;border-radius:12px;background:linear-gradient(135deg,#f3d4911c,#f3d49108);border:1px solid #e9cf9840}
+.ceremony-blessing small{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#dcc18c}
+.ceremony-blessing svg{width:12px;height:12px;fill:#e9cf98;stroke:none}
+.ceremony-message .ceremony-blessing p{display:block;-webkit-line-clamp:unset;overflow:visible;margin:4px 0 0;font-size:15px;line-height:1.75;color:#f6e6c4}
+.launch-ceremony.is-couple .ceremony-blessing p{font-size:16px}
+
+/* ---------- Pond fits the screen ---------- */
+/* Desktop: the pond no longer stretches to the long form; it fills the viewport and stays pinned while the form scrolls. */
+@media(min-width:851px){
+  .experience{align-items:start}
+  .experience .pond-column{display:flex;flex-direction:column;grid-column:1;grid-row:1 / span 3;position:sticky;top:14px;align-self:start;min-width:0}
+  .experience .pond,.scene-krathong .experience .pond.has-temple-background,.scene-lantern .experience .pond{height:clamp(520px,calc(100svh - 150px),860px);min-height:0;max-height:none;align-self:auto}
+  .experience .create-card{grid-row:1 / span 3;align-self:start;height:auto}
+  .experience .pond-caption{margin-top:12px}
+  .experience .music-player{margin-top:12px}
+}
+/* Tablet / phone: a full-width stage that leaves room to see the form starting below. */
+@media(max-width:850px){
+  .experience .pond,.scene-krathong .experience .pond.has-temple-background,.scene-lantern .experience .pond{height:min(70svh,700px);min-height:480px;max-height:none}
+}
+@media(max-width:540px){
+  .experience .pond,.scene-krathong .experience .pond.has-temple-background,.scene-lantern .experience .pond{height:min(68svh,640px);min-height:460px}
+}
+@media(max-height:560px) and (orientation:landscape){
+  .experience .pond,.scene-krathong .experience .pond.has-temple-background,.scene-lantern .experience .pond{height:calc(100svh - 24px);min-height:340px}
+}
+
+/* ---------- Responsive ---------- */
+@media(max-width:850px){.pair-cover{top:56%}.cover-art{width:min(180px,100%)}}
+@media(max-width:540px){
+  .pond-preview{top:60%}
+  .pond-preview .preview-boat{width:min(200px,52vw)}
+  .pair-cover{top:55%;width:calc(100% - 20px)}
+  .cover-frame{padding:16px 12px 14px;border-radius:18px}
+  .cover-frame:before{inset:5px;border-radius:14px}
+  .cover-ornament{inset:10px}
+  .cover-names{font-size:18px;gap:7px}
+  .cover-names svg{width:16px;height:16px}
+  .cover-art{width:min(150px,100%)}
+  .cover-status{font-size:13px;line-height:1.65}
+  .cover-frame{padding-bottom:20px}
+  .pair-launch{min-width:0;width:calc(100% - 16px);padding:11px 16px 10px}
+  .pair-launch-main{font-size:16px}
+  .ceremony-message{top:76px}
+  .launch-ceremony.is-couple .ceremony-message{max-height:calc(100% - 110px);padding:16px 14px 12px}
+  .launch-ceremony.is-couple .ceremony-message h3{font-size:19px;margin:4px 0 6px}
+  .ceremony-couple{grid-template-columns:1fr;gap:7px;margin:4px 0 9px}
+  .ceremony-wish{padding:8px 10px}
+  .ceremony-avatar{width:28px;height:28px}
+  .ceremony-wish strong{font-size:13px}
+  .ceremony-message .ceremony-wish p{font-size:13px;line-height:1.6;margin-top:4px}
+  .ceremony-blessing{padding:9px 11px 8px;margin-bottom:9px}
+  .ceremony-message .ceremony-blessing p,.launch-ceremony.is-couple .ceremony-blessing p{font-size:14px;line-height:1.65}
+  #countdown-caption{font-size:13px}
+}
+@media(max-height:620px) and (max-width:540px){.cover-art{width:min(120px,100%)}.cover-kicker{display:none}}
+@media(prefers-reduced-motion:reduce){
+  .scene-krathong .drift-lane{animation:none}
+  .cover-art,.cover-names svg,.cover-placeholder,.pair-launch.partner-ready,.pond-preview .own-preview:before{animation:none}
+  .ring-sweep.tick,#countdown-number.tick{animation:none}
+}

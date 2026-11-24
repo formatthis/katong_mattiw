@@ -1,0 +1,29 @@
+@font-face{font-family:Sarabun;src:url('fonts/Sarabun-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
+@font-face{font-family:Sarabun;src:url('fonts/Sarabun-SemiBold.ttf') format('truetype');font-weight:500 800;font-display:swap}
+:root{--sans:Sarabun,'Leelawadee UI',Tahoma,sans-serif;--serif:var(--sans)}
+body{font-family:var(--sans);line-height:1.65}
+h1,h2,h3,.brand,.footer-brand,.closing p,.detail-wish{font-family:var(--sans);letter-spacing:0}
+.hero{padding:34px 0 29px}.hero .eyebrow{font-size:14px;letter-spacing:0;color:#9fb8aa}
+.hero h1{font-size:clamp(29px,3.2vw,43px);font-weight:600;line-height:1.45;margin:16px 0}
+.hero h1 em{display:block;font-size:clamp(21px,2.1vw,29px);font-weight:400;margin:7px 0 0;color:#d8c59f}
+.hero p{font-size:16px;line-height:1.85;color:#a8beb0}.hero .scene-switch{margin-top:20px}
+.brand{font-size:27px;font-weight:600}.brand small{letter-spacing:2px}.card-heading h2{font-size:24px;font-weight:600;margin:0}
+.card-intro{font-size:15px;margin:13px 0 20px}.style-field legend{font-size:15px;display:flex;align-items:center;gap:12px;width:100%}
+.design-count{margin-left:auto;display:inline-block;font-size:12px;color:#d6c190;background:#d1b4740c;border:1px solid #cab77f2b;border-radius:20px;padding:2px 9px;font-weight:400}
+.design-filters{display:flex;gap:6px;overflow-x:auto;margin:12px 0 13px;padding:1px 0 4px;scrollbar-width:thin;scrollbar-color:#b29f6b #112f29}
+.design-filters button{font-size:13px;flex:0 0 auto;padding:5px 11px;border:1px solid #a2b99c2c;border-radius:20px;color:#adc2ad;background:transparent;white-space:nowrap}
+.design-filters button[aria-pressed=true]{background:#dfc795;color:#16352c;border-color:#dfc795}.design-filters button:hover{border-color:#d8c28a}
+.style-options{max-height:366px;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:4px 7px 5px 4px;margin:-4px;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#a39266 #0d2824}
+.style-option{min-height:107px;justify-content:center;padding:4px 4px 8px;gap:2px;background:#071f1f66}
+.style-option .style-art{width:87px;height:75px}.style-option>span.style-name{font-size:14px;font-weight:400;line-height:1.4}.style-option:has(input:checked){background:#dec38712}
+.selection-note{font-size:13px;margin:9px 0 0;color:#91ab98}.selection-note strong{font-weight:500;color:#dfd6b8}
+.label-row label{font-size:15px}.label-row>span{font-size:12px}.upload-copy strong{font-size:15px}.upload-copy small{font-size:12px}.privacy-note{font-size:12px;line-height:1.8}
+.float-button{gap:10px;justify-content:center;font-size:16px;font-weight:600}.float-button>svg{margin:0}.float-button>span{margin:0}.float-button .button-spark{display:none}
+.ceremony-message>span,.overline{letter-spacing:0;font-size:13px}.ceremony-message h3{font-family:var(--sans);font-size:25px;font-weight:600}.ceremony-message p{font-size:16px}
+.section-title h2{font-size:24px;font-weight:500}.wish-card p{font-size:16px}.wish-card strong{font-size:15px}.detail-wish{font-size:20px;line-height:1.9}.closing p{font-size:18px}.closing>span{font-size:13px;letter-spacing:0}
+.creator-credit{font-size:14px}.creator-credit strong{font-size:16px;letter-spacing:0}.pond-label{font-weight:500}.scene-lantern .style-options{max-height:none}
+@media(min-width:851px){.experience{grid-template-columns:minmax(0,1fr) 390px}.create-card{padding:24px}.pond{min-height:820px}}
+@media(max-width:1100px) and (min-width:851px){.experience{grid-template-columns:minmax(0,1fr) 350px}.create-card{padding:22px 18px}.style-option .style-art{width:79px;height:70px}.design-filters button{padding:5px 9px;font-size:12px}}
+@media(max-width:850px){.style-options{grid-template-columns:repeat(4,minmax(0,1fr));max-height:365px}.scene-lantern .style-options{grid-template-columns:repeat(3,minmax(0,1fr))}.style-option .style-art{width:95px;height:81px}.design-filters{gap:8px}.design-filters button{font-size:14px;padding:6px 15px}.style-option{min-height:112px}}
+@media(max-width:540px){.hero{padding:28px 0 24px}.hero .eyebrow{font-size:13px}.hero h1{font-size:31px;line-height:1.5}.hero h1 em{font-size:21px;font-weight:400;margin:5px 0 0}.hero p{font-size:15px;padding:0 5px}.brand{font-size:24px}.header-cta{font-size:12px}.card-heading h2{font-size:23px}.card-intro{font-size:15px}.style-options{grid-template-columns:repeat(3,minmax(0,1fr));max-height:370px}.style-option .style-art{width:90px;height:78px}.style-option>span.style-name{font-size:14px}.design-filters{gap:6px}.design-filters button{font-size:13px;padding:5px 12px}.create-card{padding:24px 20px}.style-field legend{font-size:16px}.section-title h2{font-size:23px}.wish-total{font-size:12px}.pond-bottom{font-size:11px}.pond-label small{font-size:12px}.music-track strong{font-size:14px}.music-track>span{font-size:12px}.label-row label{font-size:16px}.float-button{font-size:16px}.closing p{font-size:17px}.wish-prompts button{font-size:13px}.ceremony-message h3{font-size:24px}}
+@media(max-width:360px){.hero h1{font-size:28px}.hero h1 em{font-size:20px}.style-option .style-art{width:75px;height:68px}.style-option{min-height:100px}.style-option>span.style-name{font-size:13px}.design-filters button{padding:5px 9px}.create-card{padding:21px 16px}}

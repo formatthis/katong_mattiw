@@ -1,0 +1,6 @@
+{% extends 'admin/login.html' %}
+{% load static %}
+{% block content %}
+<div class="mattiw-login-hello"><img src="{% static 'pond/mattiw-cat.svg' %}" width="170" height="154" alt="Mattiw แมวส้มต้อนรับผู้ดูแล"><h1>เข้าสู่ระบบผู้ดูแล</h1><p>Mattiw เฝ้าหลังบ้านให้แล้ว</p></div>
+{{ block.super }}
+{% endblock %}

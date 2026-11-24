@@ -1,0 +1,253 @@
+{
+  "styles": {
+    "lotus": {
+      "svg": "<svg class=\"spec-lotus\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-lotus .boat-shadow{fill:#f8c86e0c}.spec-lotus .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-lotus .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-lotus .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-lotus .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-lotus .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-lotus .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-lotus .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-lotus .boat-flame{fill:#ffe6a2}.spec-lotus .boat-flame-halo{fill:#ffbe4e17}.spec-lotus .boat-flower{fill:#f3cb73}.spec-lotus .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-lotus .lantern-aura{fill:#f0bd6314}</style>\n      <ellipse class=\"boat-shadow\" cx=\"60\" cy=\"79\" rx=\"57\" ry=\"16\"/>\n      <ellipse class=\"boat-ripple\" cx=\"60\" cy=\"81\" rx=\"51\" ry=\"10\"/>\n      <ellipse class=\"boat-ripple\" cx=\"60\" cy=\"82\" rx=\"42\" ry=\"6\" opacity=\".5\"/>\n      <path class=\"boat-leaf\" d=\"M10 70Q11 49 32 51Q45 43 60 49Q81 40 99 53L111 69Q89 84 60 84Q27 83 10 70Z\"/>\n      <path class=\"petal-outer\" d=\"M60 66Q36 37 19 41Q16 63 46 73ZM62 66Q83 36 103 40Q106 63 77 73Z\"/>\n      <path class=\"petal-outer\" d=\"M54 65Q31 38 36 23Q59 33 62 63ZM65 65Q85 37 80 23Q60 33 58 63Z\"/>\n      <path class=\"petal-inner\" d=\"M60 68Q38 43 60 18Q82 43 60 68Z\"/>\n      <ellipse class=\"boat-base\" cx=\"60\" cy=\"70\" rx=\"39\" ry=\"10\"/>\n      <path class=\"petal-inner\" d=\"M59 73Q31 65 27 48Q50 44 62 70ZM61 73Q88 65 93 48Q72 44 58 70Z\"/>\n      <path class=\"petal-front\" d=\"M21 63Q41 58 60 76Q78 58 100 63Q90 84 60 83Q31 84 21 63Z\"/>\n      <path class=\"petal-inner\" d=\"M44 72Q60 62 76 72Q69 83 60 84Q49 82 44 72Z\"/>\n      <circle class=\"boat-flower\" cx=\"34\" cy=\"67\" r=\"3\"/><circle class=\"boat-flower\" cx=\"87\" cy=\"66\" r=\"3\"/>\n      <path class=\"boat-candle\" d=\"M58 36h4v21h-4Z\"/>\n      <ellipse class=\"boat-flame-halo\" cx=\"60\" cy=\"29\" rx=\"12\" ry=\"17\"/>\n      <path class=\"boat-flame\" d=\"M60 18Q68 29 60 35Q52 30 60 18Z\"/>\n      <path fill=\"#fff4cf\" d=\"M60 27Q63 31 60 33Q57 31 60 27Z\"/>\n      <path fill=\"none\" stroke=\"#d7be8d\" stroke-width=\".9\" d=\"m48 55-2-22m27 23 2-22\"/>\n      <path fill=\"none\" stroke=\"#baaa8d\" stroke-width=\".6\" opacity=\".5\" d=\"M46 31q-5-6 0-11m29 12q5-6 0-10\"/>\n    </svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 55,
+        "face_size": 27
+      }
+    },
+    "banana": {
+      "svg": "<svg class=\"spec-banana\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-banana .boat-shadow{fill:#f8c86e0c}.spec-banana .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-banana .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-banana .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-banana .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-banana .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-banana .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-banana .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-banana .boat-flame{fill:#ffe6a2}.spec-banana .boat-flame-halo{fill:#ffbe4e17}.spec-banana .boat-flower{fill:#f3cb73}.spec-banana .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-banana .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"84\" rx=\"52\" ry=\"10\"/><ellipse fill=\"#274b32\" stroke=\"#88a66b\" cx=\"60\" cy=\"70\" rx=\"44\" ry=\"15\"/><g fill=\"#387353\" stroke=\"#9ac47c\" stroke-width=\".6\"><path d=\"m17 67 5-33 17 29 3-42 18 37 17-37 5 42 17-29 5 33-22 14H39Z\"/></g><ellipse fill=\"#9fbd6e\" cx=\"60\" cy=\"64\" rx=\"31\" ry=\"10\"/><g fill=\"#f1b553\"><circle cx=\"34\" cy=\"68\" r=\"7\"/><circle cx=\"85\" cy=\"68\" r=\"7\"/><circle cx=\"46\" cy=\"74\" r=\"7\"/><circle cx=\"73\" cy=\"74\" r=\"7\"/></g><g fill=\"#f8d37e\"><circle cx=\"34\" cy=\"68\" r=\"3\"/><circle cx=\"85\" cy=\"68\" r=\"3\"/><circle cx=\"46\" cy=\"74\" r=\"3\"/><circle cx=\"73\" cy=\"74\" r=\"3\"/></g><path class=\"boat-candle\" d=\"M58 32h5v31h-5Z\"/><path class=\"boat-flame\" d=\"M60 14Q69 28 60 33Q53 28 60 14Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 55,
+        "face_size": 27
+      }
+    },
+    "gold": {
+      "svg": "<svg class=\"spec-gold\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-gold .boat-shadow{fill:#f8c86e0c}.spec-gold .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-gold .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-gold .petal-outer{fill:#b88535;stroke:#ecb9a4;stroke-width:.5}.spec-gold .petal-inner{fill:#f0c46e;stroke:#ffddb7;stroke-width:.6}.spec-gold .petal-front{fill:#c79847;stroke:#f3c7ad;stroke-width:.6}.spec-gold .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-gold .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-gold .boat-flame{fill:#ffe6a2}.spec-gold .boat-flame-halo{fill:#ffbe4e17}.spec-gold .boat-flower{fill:#f3cb73}.spec-gold .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-gold .lantern-aura{fill:#f0bd6314}</style>\n      <ellipse class=\"boat-shadow\" cx=\"60\" cy=\"79\" rx=\"57\" ry=\"16\"/>\n      <ellipse class=\"boat-ripple\" cx=\"60\" cy=\"81\" rx=\"51\" ry=\"10\"/>\n      <ellipse class=\"boat-ripple\" cx=\"60\" cy=\"82\" rx=\"42\" ry=\"6\" opacity=\".5\"/>\n      <path class=\"boat-leaf\" d=\"M10 70Q11 49 32 51Q45 43 60 49Q81 40 99 53L111 69Q89 84 60 84Q27 83 10 70Z\"/>\n      <path class=\"petal-outer\" d=\"M60 66Q36 37 19 41Q16 63 46 73ZM62 66Q83 36 103 40Q106 63 77 73Z\"/>\n      <path class=\"petal-outer\" d=\"M54 65Q31 38 36 23Q59 33 62 63ZM65 65Q85 37 80 23Q60 33 58 63Z\"/>\n      <path class=\"petal-inner\" d=\"M60 68Q38 43 60 18Q82 43 60 68Z\"/>\n      <ellipse class=\"boat-base\" cx=\"60\" cy=\"70\" rx=\"39\" ry=\"10\"/>\n      <path class=\"petal-inner\" d=\"M59 73Q31 65 27 48Q50 44 62 70ZM61 73Q88 65 93 48Q72 44 58 70Z\"/>\n      <path class=\"petal-front\" d=\"M21 63Q41 58 60 76Q78 58 100 63Q90 84 60 83Q31 84 21 63Z\"/>\n      <path class=\"petal-inner\" d=\"M44 72Q60 62 76 72Q69 83 60 84Q49 82 44 72Z\"/>\n      <circle class=\"boat-flower\" cx=\"34\" cy=\"67\" r=\"3\"/><circle class=\"boat-flower\" cx=\"87\" cy=\"66\" r=\"3\"/>\n      <path class=\"boat-candle\" d=\"M58 36h4v21h-4Z\"/>\n      <ellipse class=\"boat-flame-halo\" cx=\"60\" cy=\"29\" rx=\"12\" ry=\"17\"/>\n      <path class=\"boat-flame\" d=\"M60 18Q68 29 60 35Q52 30 60 18Z\"/>\n      <path fill=\"#fff4cf\" d=\"M60 27Q63 31 60 33Q57 31 60 27Z\"/>\n      <path fill=\"none\" stroke=\"#d7be8d\" stroke-width=\".9\" d=\"m48 55-2-22m27 23 2-22\"/>\n      <path fill=\"none\" stroke=\"#baaa8d\" stroke-width=\".6\" opacity=\".5\" d=\"M46 31q-5-6 0-11m29 12q5-6 0-10\"/>\n    </svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 55,
+        "face_size": 27
+      }
+    },
+    "duck": {
+      "svg": "<svg class=\"spec-duck\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-duck .boat-shadow{fill:#f8c86e0c}.spec-duck .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-duck .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-duck .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-duck .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-duck .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-duck .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-duck .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-duck .boat-flame{fill:#ffe6a2}.spec-duck .boat-flame-halo{fill:#ffbe4e17}.spec-duck .boat-flower{fill:#f3cb73}.spec-duck .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-duck .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"83\" rx=\"49\" ry=\"10\"/><path fill=\"#efc64f\" stroke=\"#ffe39b\" stroke-width=\".7\" d=\"M17 55Q5 52 10 43Q24 48 30 45Q54 30 76 45Q83 35 80 27Q78 14 93 14Q108 14 107 28Q105 45 94 53Q98 80 61 81Q25 81 17 55Z\"/><path fill=\"#e6ac39\" d=\"M28 55Q43 43 70 52Q77 66 54 71Q36 70 28 55Z\"/><path fill=\"#f28b43\" d=\"m104 28 13 5-14 5Z\"/><circle fill=\"#29352c\" cx=\"98\" cy=\"24\" r=\"2.5\"/><circle fill=\"#fff9db\" cx=\"98.5\" cy=\"23.5\" r=\".7\"/><ellipse fill=\"#eea363\" cx=\"98\" cy=\"32\" rx=\"4\" ry=\"2\"/><path class=\"boat-candle\" d=\"M56 32h5v22h-5Z\"/><path class=\"boat-flame\" d=\"M58 16Q67 28 58 33Q51 28 58 16Z\"/></svg>",
+      "face": {
+        "face_x": 45,
+        "face_y": 54,
+        "face_size": 25
+      }
+    },
+    "heart": {
+      "svg": "<svg class=\"spec-heart\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-heart .boat-shadow{fill:#f8c86e0c}.spec-heart .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-heart .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-heart .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-heart .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-heart .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-heart .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-heart .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-heart .boat-flame{fill:#ffe6a2}.spec-heart .boat-flame-halo{fill:#ffbe4e17}.spec-heart .boat-flower{fill:#f3cb73}.spec-heart .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-heart .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"83\" rx=\"50\" ry=\"10\"/><ellipse fill=\"#765866\" cx=\"60\" cy=\"77\" rx=\"39\" ry=\"8\"/><path fill=\"#b9557c\" stroke=\"#ffc5d6\" stroke-width=\".8\" d=\"M60 80C-5 52 18 12 44 30Q56 34 60 43Q67 26 85 28C119 31 114 60 60 80Z\"/><path fill=\"#e58fa5\" d=\"M60 73C11 51 27 25 45 36Q55 41 60 50Q69 35 83 35C108 40 96 60 60 73Z\"/><g fill=\"#f6cd8b\"><circle cx=\"34\" cy=\"53\" r=\"4\"/><circle cx=\"85\" cy=\"52\" r=\"4\"/><circle cx=\"60\" cy=\"70\" r=\"4\"/></g><path class=\"boat-candle\" d=\"M58 32h5v23h-5Z\"/><path class=\"boat-flame\" d=\"M60 16Q69 28 60 33Q53 28 60 16Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 53,
+        "face_size": 27
+      }
+    },
+    "marigold": {
+      "svg": "<svg class=\"spec-marigold\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-marigold .boat-shadow{fill:#f8c86e0c}.spec-marigold .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-marigold .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-marigold .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-marigold .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-marigold .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-marigold .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-marigold .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-marigold .boat-flame{fill:#ffe6a2}.spec-marigold .boat-flame-halo{fill:#ffbe4e17}.spec-marigold .boat-flower{fill:#f3cb73}.spec-marigold .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-marigold .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><ellipse fill=\"#386246\" stroke=\"#80a36d\" stroke-width=\".6\" cx=\"60\" cy=\"76\" rx=\"43\" ry=\"10\"/><ellipse fill=\"#a26328\" cx=\"60\" cy=\"66\" rx=\"36\" ry=\"13\"/><g fill=\"#e8a734\" stroke=\"#ffc75c\" stroke-width=\".6\"><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(0 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(30 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(60 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(90 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(120 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(150 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(180 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(210 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(240 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(270 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(300 60 59)\"/><ellipse cx=\"60\" cy=\"59\" rx=\"10\" ry=\"22\" transform=\"rotate(330 60 59)\"/></g><circle fill=\"#efc060\" cx=\"60\" cy=\"59\" r=\"17\"/><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 57,
+        "face_size": 26
+      }
+    },
+    "boat": {
+      "svg": "<svg class=\"spec-boat\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-boat .boat-shadow{fill:#f8c86e0c}.spec-boat .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-boat .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-boat .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-boat .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-boat .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-boat .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-boat .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-boat .boat-flame{fill:#ffe6a2}.spec-boat .boat-flame-halo{fill:#ffbe4e17}.spec-boat .boat-flower{fill:#f3cb73}.spec-boat .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-boat .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><path fill=\"#b67a43\" stroke=\"#edc491\" stroke-width=\"1\" d=\"M6 53Q14 70 29 79L90 79Q107 68 114 53L101 59H20Z\"/><path fill=\"#e0ad70\" d=\"m20 59 14 13h52l15-13Z\"/><path fill=\"none\" stroke=\"#8c592f\" stroke-width=\"1.3\" d=\"M23 72h76M34 79l-8-18m59 18 9-18\"/><path fill=\"#557a55\" stroke=\"#9fc88b\" stroke-width=\".7\" d=\"M25 61q35-18 70 0l-10 7H35Z\"/><g fill=\"#edbd71\"><circle cx=\"32\" cy=\"62\" r=\"4\"/><circle cx=\"88\" cy=\"62\" r=\"4\"/></g><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 59,
+        "face_size": 22
+      }
+    },
+    "swan": {
+      "svg": "<svg class=\"spec-swan\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-swan .boat-shadow{fill:#f8c86e0c}.spec-swan .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-swan .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-swan .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-swan .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-swan .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-swan .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-swan .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-swan .boat-flame{fill:#ffe6a2}.spec-swan .boat-flame-halo{fill:#ffbe4e17}.spec-swan .boat-flower{fill:#f3cb73}.spec-swan .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-swan .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><path fill=\"#e8e1ce\" stroke=\"#fff7e4\" stroke-width=\".8\" d=\"M15 62 5 44Q27 59 43 45Q61 33 78 49Q88 38 82 28Q75 8 91 11Q105 14 101 24Q100 29 93 29L93 42Q106 66 83 77Q44 91 15 62Z\"/><path fill=\"#c6d0c5\" d=\"M24 58Q41 43 68 51Q83 59 68 69Q38 74 24 58Z\"/><path fill=\"#f8f4e8\" d=\"M30 56Q51 47 67 55L45 60Z\"/><path fill=\"#db9a4e\" d=\"m98 22 15 6-14 3Z\"/><circle fill=\"#343735\" cx=\"96\" cy=\"18\" r=\"2\"/><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 46,
+        "face_y": 60,
+        "face_size": 24
+      }
+    },
+    "turtle": {
+      "svg": "<svg class=\"spec-turtle\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-turtle .boat-shadow{fill:#f8c86e0c}.spec-turtle .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-turtle .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-turtle .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-turtle .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-turtle .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-turtle .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-turtle .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-turtle .boat-flame{fill:#ffe6a2}.spec-turtle .boat-flame-halo{fill:#ffbe4e17}.spec-turtle .boat-flower{fill:#f3cb73}.spec-turtle .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-turtle .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><g fill=\"#709878\" stroke=\"#a1c392\" stroke-width=\".7\"><ellipse cx=\"27\" cy=\"62\" rx=\"14\" ry=\"7\" transform=\"rotate(-24 27 62)\"/><ellipse cx=\"36\" cy=\"78\" rx=\"14\" ry=\"7\" transform=\"rotate(25 36 78)\"/><ellipse cx=\"83\" cy=\"78\" rx=\"14\" ry=\"7\" transform=\"rotate(-25 83 78)\"/><ellipse cx=\"101\" cy=\"58\" rx=\"14\" ry=\"12\"/></g><circle fill=\"#253c32\" cx=\"107\" cy=\"54\" r=\"2\"/><path fill=\"#3d7354\" stroke=\"#bbcc8d\" d=\"M17 65Q24 35 58 35Q90 35 97 66Q88 85 57 84Q28 83 17 65Z\"/><path fill=\"#648d59\" stroke=\"#bed28f\" stroke-width=\".7\" d=\"m45 42 26 0 15 21-13 14H43L31 62Z\"/><g fill=\"none\" stroke=\"#9ab478\" stroke-width=\"1\"><path d=\"M45 42 36 35M71 42l7-5M86 63l10 2M73 77l9 5M43 77l-12 5M31 62l-12 3\"/></g><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 49,
+        "face_y": 62,
+        "face_size": 25
+      }
+    },
+    "cat": {
+      "svg": "<svg class=\"spec-cat\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-cat .boat-shadow{fill:#f8c86e0c}.spec-cat .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-cat .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-cat .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-cat .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-cat .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-cat .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-cat .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-cat .boat-flame{fill:#ffe6a2}.spec-cat .boat-flame-halo{fill:#ffbe4e17}.spec-cat .boat-flower{fill:#f3cb73}.spec-cat .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-cat .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><ellipse fill=\"#386246\" stroke=\"#80a36d\" stroke-width=\".6\" cx=\"60\" cy=\"76\" rx=\"43\" ry=\"10\"/><path fill=\"#d8b68f\" stroke=\"#f3d9b2\" stroke-width=\".8\" d=\"M28 50 24 23 46 34Q60 29 74 34L96 23 92 51Q102 78 60 81Q19 78 28 50Z\"/><path fill=\"#d89788\" d=\"m29 33 3 14 10-9m49-5-3 14-10-9\"/><path fill=\"#c09069\" d=\"m53 34 7 10 7-10M29 55l12 3-12 4m62-7-12 3 12 4\"/><g fill=\"#313332\"><circle cx=\"45\" cy=\"53\" r=\"2.2\"/><circle cx=\"75\" cy=\"53\" r=\"2.2\"/></g><path d=\"M55 63q5 4 10 0\" stroke=\"#554841\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\"/><ellipse fill=\"#e9a293\" cx=\"40\" cy=\"61\" rx=\"5\" ry=\"2.5\" opacity=\".7\"/><ellipse fill=\"#e9a293\" cx=\"80\" cy=\"61\" rx=\"5\" ry=\"2.5\" opacity=\".7\"/><path fill=\"#9b6b61\" d=\"m56 58 4 4 4-4Z\"/><path fill=\"none\" stroke=\"#7e6853\" d=\"M31 62 18 60m14 7-13 3m69-8 13-2m-13 7 13 3\"/><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 58,
+        "face_size": 29
+      }
+    },
+    "rabbit": {
+      "svg": "<svg class=\"spec-rabbit\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-rabbit .boat-shadow{fill:#f8c86e0c}.spec-rabbit .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-rabbit .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-rabbit .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-rabbit .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-rabbit .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-rabbit .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-rabbit .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-rabbit .boat-flame{fill:#ffe6a2}.spec-rabbit .boat-flame-halo{fill:#ffbe4e17}.spec-rabbit .boat-flower{fill:#f3cb73}.spec-rabbit .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-rabbit .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><ellipse fill=\"#386246\" stroke=\"#80a36d\" stroke-width=\".6\" cx=\"60\" cy=\"76\" rx=\"43\" ry=\"10\"/><g fill=\"#efe7dc\" stroke=\"#fff7eb\" stroke-width=\".7\"><ellipse cx=\"42\" cy=\"29\" rx=\"10\" ry=\"24\" transform=\"rotate(-12 42 29)\"/><ellipse cx=\"78\" cy=\"29\" rx=\"10\" ry=\"24\" transform=\"rotate(12 78 29)\"/><ellipse cx=\"60\" cy=\"58\" rx=\"33\" ry=\"25\"/></g><g fill=\"#dca9ac\"><ellipse cx=\"42\" cy=\"25\" rx=\"4\" ry=\"15\" transform=\"rotate(-12 42 25)\"/><ellipse cx=\"78\" cy=\"25\" rx=\"4\" ry=\"15\" transform=\"rotate(12 78 25)\"/></g><g fill=\"#313332\"><circle cx=\"45\" cy=\"53\" r=\"2.2\"/><circle cx=\"75\" cy=\"53\" r=\"2.2\"/></g><path d=\"M55 63q5 4 10 0\" stroke=\"#554841\" stroke-width=\"1.5\" fill=\"none\" stroke-linecap=\"round\"/><ellipse fill=\"#e9a293\" cx=\"40\" cy=\"61\" rx=\"5\" ry=\"2.5\" opacity=\".7\"/><ellipse fill=\"#e9a293\" cx=\"80\" cy=\"61\" rx=\"5\" ry=\"2.5\" opacity=\".7\"/><path fill=\"#c89597\" d=\"m57 59 3 4 3-4Z\"/><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 59,
+        "face_size": 29
+      }
+    },
+    "panda": {
+      "svg": "<svg class=\"spec-panda\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-panda .boat-shadow{fill:#f8c86e0c}.spec-panda .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-panda .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-panda .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-panda .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-panda .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-panda .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-panda .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-panda .boat-flame{fill:#ffe6a2}.spec-panda .boat-flame-halo{fill:#ffbe4e17}.spec-panda .boat-flower{fill:#f3cb73}.spec-panda .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-panda .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><ellipse fill=\"#386246\" stroke=\"#80a36d\" stroke-width=\".6\" cx=\"60\" cy=\"76\" rx=\"43\" ry=\"10\"/><g fill=\"#37433f\"><circle cx=\"35\" cy=\"33\" r=\"13\"/><circle cx=\"85\" cy=\"33\" r=\"13\"/></g><ellipse fill=\"#e9e9d9\" stroke=\"#fffcdf\" stroke-width=\".8\" cx=\"60\" cy=\"57\" rx=\"35\" ry=\"27\"/><g fill=\"#3e4743\"><ellipse cx=\"43\" cy=\"53\" rx=\"8\" ry=\"10\" transform=\"rotate(22 43 53)\"/><ellipse cx=\"77\" cy=\"53\" rx=\"8\" ry=\"10\" transform=\"rotate(-22 77 53)\"/><ellipse cx=\"60\" cy=\"64\" rx=\"4\" ry=\"3\"/></g><g fill=\"#f8f4de\"><circle cx=\"44\" cy=\"51\" r=\"2\"/><circle cx=\"76\" cy=\"51\" r=\"2\"/></g><ellipse fill=\"#e9a293\" cx=\"40\" cy=\"61\" rx=\"5\" ry=\"2.5\" opacity=\".7\"/><ellipse fill=\"#e9a293\" cx=\"80\" cy=\"61\" rx=\"5\" ry=\"2.5\" opacity=\".7\"/><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 58,
+        "face_size": 30
+      }
+    },
+    "capybara": {
+      "svg": "<svg class=\"spec-capybara\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-capybara .boat-shadow{fill:#f8c86e0c}.spec-capybara .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-capybara .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-capybara .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-capybara .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-capybara .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-capybara .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-capybara .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-capybara .boat-flame{fill:#ffe6a2}.spec-capybara .boat-flame-halo{fill:#ffbe4e17}.spec-capybara .boat-flower{fill:#f3cb73}.spec-capybara .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-capybara .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><ellipse fill=\"#386246\" stroke=\"#80a36d\" stroke-width=\".6\" cx=\"60\" cy=\"76\" rx=\"43\" ry=\"10\"/><g fill=\"#b18b64\" stroke=\"#dfba8d\" stroke-width=\".7\"><ellipse cx=\"35\" cy=\"35\" rx=\"9\" ry=\"10\"/><ellipse cx=\"85\" cy=\"35\" rx=\"9\" ry=\"10\"/><path d=\"M29 46Q29 31 60 32Q91 31 91 46V65Q90 83 60 83Q30 83 29 65Z\"/></g><ellipse fill=\"#c9a780\" cx=\"60\" cy=\"65\" rx=\"23\" ry=\"12\"/><path stroke=\"#534c3f\" stroke-width=\"2\" fill=\"none\" stroke-linecap=\"round\" d=\"m38 53 8 1m28 0 8-1M55 67q5 4 10 0\"/><ellipse fill=\"#7b654d\" cx=\"60\" cy=\"61\" rx=\"6\" ry=\"4\"/><circle fill=\"#e6a543\" cx=\"60\" cy=\"31\" r=\"9\"/><path fill=\"#5c8c53\" d=\"M59 23q2-9 10-5-2 6-10 5Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 59,
+        "face_size": 29
+      }
+    },
+    "watermelon": {
+      "svg": "<svg class=\"spec-watermelon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-watermelon .boat-shadow{fill:#f8c86e0c}.spec-watermelon .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-watermelon .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-watermelon .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-watermelon .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-watermelon .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-watermelon .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-watermelon .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-watermelon .boat-flame{fill:#ffe6a2}.spec-watermelon .boat-flame-halo{fill:#ffbe4e17}.spec-watermelon .boat-flower{fill:#f3cb73}.spec-watermelon .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-watermelon .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><path fill=\"#3c7e53\" stroke=\"#b4d39a\" d=\"M12 47h96Q99 85 60 85Q21 85 12 47Z\"/><path fill=\"#b7d990\" d=\"M17 47h86Q96 78 60 79Q25 79 17 47Z\"/><path fill=\"#df7b83\" stroke=\"#f5ac9f\" stroke-width=\".6\" d=\"M21 47h78Q90 73 60 74Q30 74 21 47Z\"/><g fill=\"#603f40\"><ellipse cx=\"36\" cy=\"54\" rx=\"1.5\" ry=\"3\" transform=\"rotate(-30 36 54)\"/><ellipse cx=\"47\" cy=\"63\" rx=\"1.5\" ry=\"3\"/><ellipse cx=\"72\" cy=\"63\" rx=\"1.5\" ry=\"3\"/><ellipse cx=\"84\" cy=\"54\" rx=\"1.5\" ry=\"3\" transform=\"rotate(30 84 54)\"/></g><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 58,
+        "face_size": 22
+      }
+    },
+    "coconut": {
+      "svg": "<svg class=\"spec-coconut\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-coconut .boat-shadow{fill:#f8c86e0c}.spec-coconut .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-coconut .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-coconut .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-coconut .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-coconut .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-coconut .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-coconut .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-coconut .boat-flame{fill:#ffe6a2}.spec-coconut .boat-flame-halo{fill:#ffbe4e17}.spec-coconut .boat-flower{fill:#f3cb73}.spec-coconut .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-coconut .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><path fill=\"#846144\" stroke=\"#cba574\" stroke-width=\".8\" d=\"M24 48Q20 81 60 85Q100 81 96 48Z\"/><ellipse fill=\"#c4aa7b\" stroke=\"#ddc9a2\" cx=\"60\" cy=\"48\" rx=\"37\" ry=\"18\"/><ellipse fill=\"#ece0bd\" cx=\"60\" cy=\"48\" rx=\"29\" ry=\"12\"/><ellipse fill=\"#b6cbad\" cx=\"60\" cy=\"48\" rx=\"23\" ry=\"8\"/><path fill=\"none\" stroke=\"#5b4537\" stroke-width=\"1.2\" d=\"m33 60 7 18m9-17 3 21m12-19-1 20m15-21-6 17m14-20-7 14\"/><g fill=\"#dca4ae\"><circle cx=\"31\" cy=\"49\" r=\"5\"/><circle cx=\"89\" cy=\"49\" r=\"5\"/></g><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 53,
+        "face_size": 25
+      }
+    },
+    "bread": {
+      "svg": "<svg class=\"spec-bread\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-bread .boat-shadow{fill:#f8c86e0c}.spec-bread .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-bread .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-bread .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-bread .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-bread .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-bread .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-bread .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-bread .boat-flame{fill:#ffe6a2}.spec-bread .boat-flame-halo{fill:#ffbe4e17}.spec-bread .boat-flower{fill:#f3cb73}.spec-bread .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-bread .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><path fill=\"#bd8b50\" stroke=\"#edcc92\" stroke-width=\".8\" d=\"M23 78V46Q10 35 23 24Q35 14 49 24Q60 17 72 24Q86 14 98 27Q108 39 97 46V78Q60 87 23 78Z\"/><path fill=\"#efcd8b\" d=\"M30 72V42Q21 34 30 29Q39 23 49 31Q60 24 72 31Q83 23 92 31Q99 36 90 43V72Q60 79 30 72Z\"/><g fill=\"#c4995d\" opacity=\".7\"><circle cx=\"36\" cy=\"44\" r=\"2\"/><circle cx=\"79\" cy=\"38\" r=\"2\"/><circle cx=\"43\" cy=\"68\" r=\"1.5\"/><circle cx=\"83\" cy=\"65\" r=\"2\"/></g><path fill=\"none\" stroke=\"#8a6241\" stroke-width=\"1.5\" stroke-linecap=\"round\" d=\"M39 53h6m30 0h6M55 63q5 4 10 0\"/><rect class=\"boat-candle\" x=\"58\" y=\"28\" width=\"4\" height=\"24\" rx=\"1\"/><path class=\"boat-flame\" d=\"M60 13Q68 23 60 29Q53 24 60 13Z\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 57,
+        "face_size": 27
+      }
+    },
+    "moon": {
+      "svg": "<svg class=\"spec-moon\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-moon .boat-shadow{fill:#f8c86e0c}.spec-moon .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-moon .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-moon .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-moon .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-moon .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-moon .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-moon .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-moon .boat-flame{fill:#ffe6a2}.spec-moon .boat-flame-halo{fill:#ffbe4e17}.spec-moon .boat-flower{fill:#f3cb73}.spec-moon .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-moon .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><path fill=\"#dabd70\" stroke=\"#ffdf9e\" stroke-width=\"1\" d=\"M77 18Q57 28 64 49Q72 69 94 67Q81 87 57 81Q23 75 27 45Q31 19 55 15Q67 13 77 18Z\"/><path fill=\"#eed593\" d=\"M57 24Q34 27 35 51Q36 69 53 72Q39 54 49 36Z\"/><g fill=\"#b59756\" opacity=\".7\"><circle cx=\"43\" cy=\"47\" r=\"4\"/><circle cx=\"49\" cy=\"63\" r=\"3\"/></g><path fill=\"#f9e0a0\" d=\"m94 29 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1Z\"/></svg>",
+      "face": {
+        "face_x": 43,
+        "face_y": 51,
+        "face_size": 22
+      }
+    },
+    "star": {
+      "svg": "<svg class=\"spec-star\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-star .boat-shadow{fill:#f8c86e0c}.spec-star .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-star .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-star .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-star .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-star .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-star .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-star .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-star .boat-flame{fill:#ffe6a2}.spec-star .boat-flame-halo{fill:#ffbe4e17}.spec-star .boat-flower{fill:#f3cb73}.spec-star .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-star .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"boat-ripple\" cx=\"60\" cy=\"85\" rx=\"50\" ry=\"9\"/><path fill=\"#d4ad53\" stroke=\"#ffe2a0\" stroke-width=\"1\" stroke-linejoin=\"round\" d=\"m60 15 14 23 29 5-19 22 3 23-27-11-27 11 3-23-19-22 29-5Z\"/><path fill=\"#f1d487\" d=\"m60 25 10 22 23 1-18 16 3 15-18-10-18 10 3-15-18-16 23-1Z\"/><path fill=\"none\" stroke=\"#e4bd63\" stroke-width=\"1\" d=\"m60 25 0 44m-33-21 33 21 33-21\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 57,
+        "face_size": 25
+      }
+    },
+    "paper": {
+      "svg": "<svg class=\"spec-paper\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-paper .boat-shadow{fill:#f8c86e0c}.spec-paper .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-paper .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-paper .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-paper .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-paper .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-paper .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-paper .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-paper .boat-flame{fill:#ffe6a2}.spec-paper .boat-flame-halo{fill:#ffbe4e17}.spec-paper .boat-flower{fill:#f3cb73}.spec-paper .lantern-body{fill:#e4b379;stroke:#f8d8a3;stroke-width:.8}.spec-paper .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"lantern-aura\" cx=\"60\" cy=\"52\" rx=\"46\" ry=\"46\"/><path class=\"lantern-body\" d=\"M35 12Q60 5 85 12L89 61Q88 76 60 78Q32 76 31 61Z\"/><path fill=\"#fff0bc\" opacity=\".15\" d=\"M43 12Q47 44 43 73h12Q54 43 56 10Z\"/><path fill=\"none\" stroke=\"currentColor\" opacity=\".25\" d=\"M35 25q25 7 51 0M33 45q27 7 54 0M33 61q27 8 54 0M47 12q-4 31 0 62m26-62q4 31 0 62\"/><ellipse fill=\"#824a34\" cx=\"60\" cy=\"76\" rx=\"21\" ry=\"5\"/><ellipse fill=\"#ffe6a0\" cx=\"60\" cy=\"75\" rx=\"16\" ry=\"3\"/><path class=\"boat-flame\" d=\"M60 57Q68 70 60 75Q53 70 60 57Z\"/><path fill=\"none\" stroke=\"#d8b97b\" stroke-width=\".7\" d=\"m44 78 7 8m25-8-7 8\"/><path fill=\"none\" stroke=\"#f4c26c\" d=\"M51 86h18\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 41,
+        "face_size": 29
+      }
+    },
+    "rose": {
+      "svg": "<svg class=\"spec-rose\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-rose .boat-shadow{fill:#f8c86e0c}.spec-rose .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-rose .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-rose .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-rose .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-rose .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-rose .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-rose .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-rose .boat-flame{fill:#ffe6a2}.spec-rose .boat-flame-halo{fill:#ffbe4e17}.spec-rose .boat-flower{fill:#f3cb73}.spec-rose .lantern-body{fill:#d894aa;stroke:#f8d8a3;stroke-width:.8}.spec-rose .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"lantern-aura\" cx=\"60\" cy=\"52\" rx=\"46\" ry=\"46\"/><path class=\"lantern-body\" d=\"M35 12Q60 5 85 12L89 61Q88 76 60 78Q32 76 31 61Z\"/><path fill=\"#fff0bc\" opacity=\".15\" d=\"M43 12Q47 44 43 73h12Q54 43 56 10Z\"/><path fill=\"none\" stroke=\"currentColor\" opacity=\".25\" d=\"M35 25q25 7 51 0M33 45q27 7 54 0M33 61q27 8 54 0M47 12q-4 31 0 62m26-62q4 31 0 62\"/><ellipse fill=\"#824a34\" cx=\"60\" cy=\"76\" rx=\"21\" ry=\"5\"/><ellipse fill=\"#ffe6a0\" cx=\"60\" cy=\"75\" rx=\"16\" ry=\"3\"/><path class=\"boat-flame\" d=\"M60 57Q68 70 60 75Q53 70 60 57Z\"/><path fill=\"none\" stroke=\"#d8b97b\" stroke-width=\".7\" d=\"m44 78 7 8m25-8-7 8\"/><path fill=\"none\" stroke=\"#f4c26c\" d=\"M51 86h18\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 41,
+        "face_size": 29
+      }
+    },
+    "sky": {
+      "svg": "<svg class=\"spec-sky\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"none\" stroke=\"none\" viewBox=\"0 0 120 100\" aria-hidden=\"true\"><style>.spec-sky .boat-shadow{fill:#f8c86e0c}.spec-sky .boat-ripple{fill:none;stroke:#d7be7d70;stroke-width:.65}.spec-sky .boat-leaf{fill:#3a694c;stroke:#76a66a;stroke-width:.5}.spec-sky .petal-outer{fill:#b75d7d;stroke:#ecb9a4;stroke-width:.5}.spec-sky .petal-inner{fill:#e99ca7;stroke:#ffddb7;stroke-width:.6}.spec-sky .petal-front{fill:#c7758a;stroke:#f3c7ad;stroke-width:.6}.spec-sky .boat-base{fill:#416044;stroke:#8ca967;stroke-width:.7}.spec-sky .boat-candle{fill:#f4d59c;stroke:#f9e4b8;stroke-width:.4}.spec-sky .boat-flame{fill:#ffe6a2}.spec-sky .boat-flame-halo{fill:#ffbe4e17}.spec-sky .boat-flower{fill:#f3cb73}.spec-sky .lantern-body{fill:#8dbabf;stroke:#f8d8a3;stroke-width:.8}.spec-sky .lantern-aura{fill:#f0bd6314}</style><ellipse class=\"lantern-aura\" cx=\"60\" cy=\"52\" rx=\"46\" ry=\"46\"/><path class=\"lantern-body\" d=\"M35 12Q60 5 85 12L89 61Q88 76 60 78Q32 76 31 61Z\"/><path fill=\"#fff0bc\" opacity=\".15\" d=\"M43 12Q47 44 43 73h12Q54 43 56 10Z\"/><path fill=\"none\" stroke=\"currentColor\" opacity=\".25\" d=\"M35 25q25 7 51 0M33 45q27 7 54 0M33 61q27 8 54 0M47 12q-4 31 0 62m26-62q4 31 0 62\"/><ellipse fill=\"#824a34\" cx=\"60\" cy=\"76\" rx=\"21\" ry=\"5\"/><ellipse fill=\"#ffe6a0\" cx=\"60\" cy=\"75\" rx=\"16\" ry=\"3\"/><path class=\"boat-flame\" d=\"M60 57Q68 70 60 75Q53 70 60 57Z\"/><path fill=\"none\" stroke=\"#d8b97b\" stroke-width=\".7\" d=\"m44 78 7 8m25-8-7 8\"/><path fill=\"none\" stroke=\"#f4c26c\" d=\"M51 86h18\"/></svg>",
+      "face": {
+        "face_x": 50,
+        "face_y": 41,
+        "face_size": 29
+      }
+    }
+  },
+  "studio": {
+    "defaults": {
+      "enabled": true,
+      "color": "#eaa3b5",
+      "leaf_color": "#4f8a60",
+      "leaf": "folded",
+      "candles": 1,
+      "incense": 3,
+      "candle_color": "#f7dfaa",
+      "decoration": "flowers"
+    },
+    "palette": [
+      {
+        "name": "ชมพู",
+        "value": "#eaa3b5"
+      },
+      {
+        "name": "ทอง",
+        "value": "#e8c174"
+      },
+      {
+        "name": "ม่วง",
+        "value": "#b4a3d7"
+      },
+      {
+        "name": "ฟ้า",
+        "value": "#8cbcc8"
+      },
+      {
+        "name": "ส้ม",
+        "value": "#eeb17b"
+      },
+      {
+        "name": "ขาว",
+        "value": "#eee5ce"
+      }
+    ],
+    "leaves": [
+      {
+        "value": "folded",
+        "name": "พับกลีบ"
+      },
+      {
+        "value": "round",
+        "name": "กลีบมน"
+      },
+      {
+        "value": "lotus",
+        "name": "ดอกบัว"
+      },
+      {
+        "value": "layered",
+        "name": "ซ้อนชั้น"
+      }
+    ],
+    "leaf_shapes": {
+      "folded": "<ellipse cx=\"60\" cy=\"72\" rx=\"43\" ry=\"12\" fill=\"{leaf_color}\"/><path d=\"m17 65 5-30 14 27 8-35 16 32 16-32 8 35 14-27 5 30-22 13H39Z\" fill=\"{leaf_color}\" stroke=\"#e0edba\" stroke-opacity=\".5\" stroke-width=\".7\"/><path d=\"m22 35 7 31m15-39 8 34m24-34-8 34m30-26-7 31\" stroke=\"#f1f2c6\" stroke-opacity=\".25\" stroke-width=\"1\"/>",
+      "round": "<ellipse cx=\"60\" cy=\"72\" rx=\"44\" ry=\"12\" fill=\"{leaf_color}\"/><path d=\"M20 70Q5 48 20 45Q35 48 20 70Z\" fill=\"{leaf_color}\" stroke=\"#daebbb\" stroke-opacity=\".55\" stroke-width=\".7\"/><path d=\"M36 70Q21 48 36 41Q51 48 36 70Z\" fill=\"{leaf_color}\" stroke=\"#daebbb\" stroke-opacity=\".55\" stroke-width=\".7\"/><path d=\"M52 70Q37 48 52 37Q67 48 52 70Z\" fill=\"{leaf_color}\" stroke=\"#daebbb\" stroke-opacity=\".55\" stroke-width=\".7\"/><path d=\"M68 70Q53 48 68 37Q83 48 68 70Z\" fill=\"{leaf_color}\" stroke=\"#daebbb\" stroke-opacity=\".55\" stroke-width=\".7\"/><path d=\"M84 70Q69 48 84 41Q99 48 84 70Z\" fill=\"{leaf_color}\" stroke=\"#daebbb\" stroke-opacity=\".55\" stroke-width=\".7\"/><path d=\"M100 70Q85 48 100 45Q115 48 100 70Z\" fill=\"{leaf_color}\" stroke=\"#daebbb\" stroke-opacity=\".55\" stroke-width=\".7\"/>",
+      "lotus": "<ellipse cx=\"60\" cy=\"75\" rx=\"44\" ry=\"10\" fill=\"{leaf_color}\"/><path d=\"M60 73Q22 64 15 40Q45 34 60 68Q75 34 105 40Q98 64 60 73Z\" fill=\"{leaf_color}\" stroke=\"#e6efbf\" stroke-opacity=\".5\"/><path d=\"M60 74Q35 48 60 24Q85 48 60 74Z\" fill=\"{color}\" stroke=\"#ffe2c0\" stroke-opacity=\".8\"/><path d=\"M60 77Q32 66 29 46Q53 46 60 72Q67 46 91 46Q88 66 60 77Z\" fill=\"{color}\" stroke=\"#ffe2c0\" stroke-opacity=\".65\"/>",
+      "layered": "<ellipse cx=\"60\" cy=\"74\" rx=\"45\" ry=\"12\" fill=\"{leaf_color}\"/><path d=\"m16 69 10-18 12 12 11-22 11 16 11-16 11 22 12-12 10 18-20 11H36Z\" fill=\"{leaf_color}\" stroke=\"#d8eab0\" stroke-opacity=\".5\"/><path d=\"m25 59 8-19 11 11 16-24 16 24 11-11 8 19-22 12H47Z\" fill=\"{leaf_color}\" stroke=\"#e6eec2\" stroke-opacity=\".5\"/><ellipse cx=\"60\" cy=\"68\" rx=\"29\" ry=\"7\" fill=\"{color}\" opacity=\".7\"/>"
+    },
+    "candles": {
+      "0": "",
+      "1": "<rect x=\"58\" y=\"30\" width=\"4\" height=\"31\" rx=\"1\" fill=\"{candle_color}\" stroke=\"#ffecc2\" stroke-width=\".4\"/><path class=\"boat-flame\" d=\"M60 16Q68 27 60 31Q53 26 60 16Z\" fill=\"#ffe5a2\"/><path d=\"M60 24q4 4 0 6-4-2 0-6Z\" fill=\"#fff9df\"/>",
+      "2": "<rect x=\"50\" y=\"30\" width=\"4\" height=\"31\" rx=\"1\" fill=\"{candle_color}\" stroke=\"#ffecc2\" stroke-width=\".4\"/><path class=\"boat-flame\" d=\"M52 16Q60 27 52 31Q45 26 52 16Z\" fill=\"#ffe5a2\"/><path d=\"M52 24q4 4 0 6-4-2 0-6Z\" fill=\"#fff9df\"/><rect x=\"66\" y=\"30\" width=\"4\" height=\"31\" rx=\"1\" fill=\"{candle_color}\" stroke=\"#ffecc2\" stroke-width=\".4\"/><path class=\"boat-flame\" d=\"M68 16Q76 27 68 31Q61 26 68 16Z\" fill=\"#ffe5a2\"/><path d=\"M68 24q4 4 0 6-4-2 0-6Z\" fill=\"#fff9df\"/>",
+      "3": "<rect x=\"43\" y=\"30\" width=\"4\" height=\"31\" rx=\"1\" fill=\"{candle_color}\" stroke=\"#ffecc2\" stroke-width=\".4\"/><path class=\"boat-flame\" d=\"M45 16Q53 27 45 31Q38 26 45 16Z\" fill=\"#ffe5a2\"/><path d=\"M45 24q4 4 0 6-4-2 0-6Z\" fill=\"#fff9df\"/><rect x=\"58\" y=\"30\" width=\"4\" height=\"31\" rx=\"1\" fill=\"{candle_color}\" stroke=\"#ffecc2\" stroke-width=\".4\"/><path class=\"boat-flame\" d=\"M60 16Q68 27 60 31Q53 26 60 16Z\" fill=\"#ffe5a2\"/><path d=\"M60 24q4 4 0 6-4-2 0-6Z\" fill=\"#fff9df\"/><rect x=\"73\" y=\"30\" width=\"4\" height=\"31\" rx=\"1\" fill=\"{candle_color}\" stroke=\"#ffecc2\" stroke-width=\".4\"/><path class=\"boat-flame\" d=\"M75 16Q83 27 75 31Q68 26 75 16Z\" fill=\"#ffe5a2\"/><path d=\"M75 24q4 4 0 6-4-2 0-6Z\" fill=\"#fff9df\"/>"
+    },
+    "incense": {
+      "0": "",
+      "1": "<path d=\"M81 62V13\" stroke=\"#c9a773\" stroke-width=\"1.1\"/><path d=\"M81 13V8\" stroke=\"#b9664a\" stroke-width=\"1.2\"/><path d=\"M81 6q5-5 0-10\" stroke=\"#e5dfc4\" stroke-opacity=\".5\" stroke-width=\".7\" fill=\"none\"/>",
+      "3": "<path d=\"M77 62V13\" stroke=\"#c9a773\" stroke-width=\"1.1\"/><path d=\"M77 13V8\" stroke=\"#b9664a\" stroke-width=\"1.2\"/><path d=\"M77 6q5-5 0-10\" stroke=\"#e5dfc4\" stroke-opacity=\".5\" stroke-width=\".7\" fill=\"none\"/><path d=\"M83 62V13\" stroke=\"#c9a773\" stroke-width=\"1.1\"/><path d=\"M83 13V8\" stroke=\"#b9664a\" stroke-width=\"1.2\"/><path d=\"M83 6q-5-5 0-10\" stroke=\"#e5dfc4\" stroke-opacity=\".5\" stroke-width=\".7\" fill=\"none\"/><path d=\"M89 62V13\" stroke=\"#c9a773\" stroke-width=\"1.1\"/><path d=\"M89 13V8\" stroke=\"#b9664a\" stroke-width=\"1.2\"/><path d=\"M89 6q5-5 0-10\" stroke=\"#e5dfc4\" stroke-opacity=\".5\" stroke-width=\".7\" fill=\"none\"/>"
+    },
+    "base": "<ellipse cx=\"60\" cy=\"78\" rx=\"48\" ry=\"10\" fill=\"#f0cc8b\" fill-opacity=\".08\"/><ellipse cx=\"60\" cy=\"78\" rx=\"49\" ry=\"9\" fill=\"none\" stroke=\"#e7d3a9\" stroke-opacity=\".35\" stroke-width=\".6\"/>",
+    "front": "<path d=\"M20 68Q60 83 100 68L94 78Q60 91 26 78Z\" fill=\"{leaf_color}\" stroke=\"#cbd59d\" stroke-opacity=\".6\" stroke-width=\".6\"/><path d=\"M26 75Q60 85 94 75\" stroke=\"#ead99b\" stroke-opacity=\".6\" fill=\"none\" stroke-width=\"1\"/>",
+    "decorations": {
+      "flowers": "<g fill=\"{color}\" stroke=\"#ffedcd\" stroke-opacity=\".35\" stroke-width=\".4\"><circle cx=\"27\" cy=\"69\" r=\"4\"/><circle cx=\"35\" cy=\"69\" r=\"4\"/><circle cx=\"31\" cy=\"65\" r=\"4\"/><circle cx=\"31\" cy=\"73\" r=\"4\"/></g><circle cx=\"31\" cy=\"69\" r=\"2.5\" fill=\"#f7d58e\"/><g fill=\"{color}\" stroke=\"#ffedcd\" stroke-opacity=\".35\" stroke-width=\".4\"><circle cx=\"85\" cy=\"69\" r=\"4\"/><circle cx=\"93\" cy=\"69\" r=\"4\"/><circle cx=\"89\" cy=\"65\" r=\"4\"/><circle cx=\"89\" cy=\"73\" r=\"4\"/></g><circle cx=\"89\" cy=\"69\" r=\"2.5\" fill=\"#f7d58e\"/><g fill=\"{color}\" stroke=\"#ffedcd\" stroke-opacity=\".35\" stroke-width=\".4\"><circle cx=\"40\" cy=\"77\" r=\"4\"/><circle cx=\"48\" cy=\"77\" r=\"4\"/><circle cx=\"44\" cy=\"73\" r=\"4\"/><circle cx=\"44\" cy=\"81\" r=\"4\"/></g><circle cx=\"44\" cy=\"77\" r=\"2.5\" fill=\"#f7d58e\"/><g fill=\"{color}\" stroke=\"#ffedcd\" stroke-opacity=\".35\" stroke-width=\".4\"><circle cx=\"72\" cy=\"77\" r=\"4\"/><circle cx=\"80\" cy=\"77\" r=\"4\"/><circle cx=\"76\" cy=\"73\" r=\"4\"/><circle cx=\"76\" cy=\"81\" r=\"4\"/></g><circle cx=\"76\" cy=\"77\" r=\"2.5\" fill=\"#f7d58e\"/>",
+      "pearls": "<circle cx=\"25\" cy=\"72\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/><circle cx=\"34\" cy=\"75.06146745892072\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/><circle cx=\"43\" cy=\"77.65685424949238\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/><circle cx=\"52\" cy=\"79.39103626009029\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/><circle cx=\"61\" cy=\"80\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/><circle cx=\"70\" cy=\"79.39103626009029\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/><circle cx=\"79\" cy=\"77.65685424949238\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/><circle cx=\"88\" cy=\"75.06146745892072\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/><circle cx=\"97\" cy=\"72\" r=\"2.7\" fill=\"{color}\" stroke=\"#ffedcd\" stroke-width=\".7\"/>",
+      "ribbon": "<path d=\"M60 77Q37 62 35 75Q38 87 60 80Q82 87 85 75Q83 62 60 77Z\" fill=\"{color}\" stroke=\"#ffe9c7\" stroke-opacity=\".6\" stroke-width=\".7\"/><circle cx=\"60\" cy=\"78\" r=\"4\" fill=\"{color}\"/><path d=\"m57 81-6 9 9-3 8 4-5-10Z\" fill=\"{color}\"/>"
+    },
+    "lantern": "<ellipse cx=\"60\" cy=\"49\" rx=\"45\" ry=\"45\" fill=\"{color}\" fill-opacity=\".08\"/><path d=\"M34 13Q60 5 86 13L90 62Q88 77 60 78Q32 77 30 62Z\" fill=\"{color}\" stroke=\"#ffe5bd\" stroke-width=\".8\"/><path d=\"M42 12Q46 45 42 73h12Q52 43 55 10Z\" fill=\"#fff8e3\" fill-opacity=\".18\"/><path d=\"M34 27q26 6 53 0M32 45q28 6 56 0M32 62q28 6 56 0M47 12q-4 33 0 62m26-62q4 33 0 62\" stroke=\"#fff0cc\" stroke-opacity=\".3\" fill=\"none\" stroke-width=\".6\"/><ellipse cx=\"60\" cy=\"76\" rx=\"21\" ry=\"5\" fill=\"#825a42\"/><ellipse cx=\"60\" cy=\"75\" rx=\"16\" ry=\"3\" fill=\"{candle_color}\"/><path d=\"M60 57Q68 69 60 75Q53 69 60 57Z\" fill=\"#ffe3a0\"/><path d=\"m44 78 7 8h18l7-8\" fill=\"none\" stroke=\"#edce93\"/>"
+  }
+}

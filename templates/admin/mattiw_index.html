@@ -1,0 +1,16 @@
+{% extends 'admin/index.html' %}
+{% load static %}
+{% block coltype %}colM{% endblock %}
+{% block content_title %}{% endblock %}
+{% block content %}
+<section class="mattiw-dashboard-hello" aria-labelledby="dashboard-title">
+  <div><span class="mattiw-admin-label">สวัสดี {{ user.get_short_name|default:user.username }}</span><h1 id="dashboard-title">หลังบ้านของ Mattiw</h1><p>เพิ่มแบบกระทง เปลี่ยนเพลง หรือแวะดูคำอธิษฐานล่าสุดได้ที่นี่</p><a href="{% url 'index' %}" class="mattiw-visit-site">เปิดหน้าเว็บ</a></div>
+  <img src="{% static 'pond/mattiw-cat.svg' %}" width="190" height="172" alt="Mattiw แมวส้มถือกระทง">
+</section>
+<nav class="mattiw-shortcuts" aria-label="เมนูจัดการหลัก">
+  {% if perms.pond.view_floatingdesign or perms.pond.change_floatingdesign %}<a href="{% url 'admin:pond_floatingdesign_changelist' %}"><span class="mattiw-shortcut-icon" aria-hidden="true">✿</span><strong>แบบกระทงและโคม</strong><span>เพิ่มภาพ จัดลำดับ เปิดหรือปิดแบบที่เลือกได้</span><small>จัดการแบบ</small></a>{% endif %}
+  {% if perms.pond.view_backgroundmusic or perms.pond.change_backgroundmusic %}<a href="{% url 'admin:pond_backgroundmusic_changelist' %}"><span class="mattiw-shortcut-icon" aria-hidden="true">♫</span><strong>เพลงประจำเว็บ</strong><span>อัปโหลดเพลงลอยกระทง หรือเปลี่ยนเพลงที่เปิดอยู่</span><small>จัดการเพลง</small></a>{% endif %}
+  {% if perms.pond.view_krathong or perms.pond.change_krathong %}<a href="{% url 'admin:pond_krathong_changelist' %}"><span class="mattiw-shortcut-icon" aria-hidden="true">♡</span><strong>คำอธิษฐาน</strong><span>ดูชื่อ รูป และคำอธิษฐานจากทั้งสองหน้า</span><small>ดูคำอธิษฐาน</small></a>{% endif %}
+</nav>
+{{ block.super }}
+{% endblock %}

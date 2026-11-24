@@ -1,0 +1,11 @@
+{% load static %}
+<dialog class="welcome-dialog" id="mattiw-welcome" aria-labelledby="welcome-title" aria-describedby="welcome-description">
+  <button type="button" class="welcome-close" data-welcome-close aria-label="ปิดหน้าต้อนรับ"><svg><use href="#i-close"/></svg></button>
+  <span class="welcome-badge">แมวส้มเจ้าบ้าน</span>
+  <img class="welcome-cat" src="{% static 'pond/mattiw-cat.svg' %}" width="270" height="245" alt="Mattiw แมวส้มถือกระทงและโบกมือทักทาย">
+  <h2 id="welcome-title">สวัสดี เราชื่อ <span>Mattiw</span></h2>
+  <p class="welcome-credit">สร้างโดย <strong>mattiw</strong> และ <strong>conne</strong></p>
+  <p id="welcome-description">เลือก{% if is_lantern %}โคม{% else %}กระทง{% endif %}ที่ชอบ เขียนสิ่งที่อยากขอ<br>แล้วมาลอยด้วยกันนะ</p>
+  <button type="button" class="welcome-start" data-welcome-close>{% if is_lantern %}ไปปล่อยโคมกัน{% else %}ไปลอยกระทงกัน{% endif %}<svg><use href="#i-lotus"/></svg></button>
+  <span class="welcome-signoff">ขอให้เป็นคืนที่ดีของทุกคน</span>
+</dialog>

@@ -1,0 +1,7 @@
+Asset: thai-temple-night.png
+Created with: built-in image_gen.imagegen (not the fallback CLI)
+Workspace path: D:/ลอยกระทง/static/pond/thai-temple-night.png
+Original generation retained in the Codex generated_images directory.
+
+Final prompt:
+Use case: photorealistic-natural. Asset type: immersive background for an online Loy Krathong pond website, no UI. Generate a beautiful photorealistic cinematic Thai Buddhist temple on the opposite bank of a calm river at blue hour turning night, ornate authentic Thai tiered roofs and golden spire, warmly illuminated white-and-gold temple buildings across the upper third, distant trees, several small fireworks in the navy sky, full moon atmospheric glow. The bottom 60 percent must be EMPTY REAL WATER seen from a low riverbank, detailed natural small ripples with long warm golden temple light reflections and cool teal moonlight reflections. Composition wide landscape 3:2, horizon at 36 percent from top, temple prominent at upper center-right but pleasant cropped to mobile center. Clear realistic water foreground for overlaying interactive floating krathongs. Rich deep navy and emerald water, warm gold lighting, photographic detail, tasteful festival atmosphere. No people close up, no boats, no krathongs on the water, no lettering, no logo, no watermark. This is a background image asset, not a website screenshot.

@@ -1,0 +1,19 @@
+dialog.welcome-dialog{max-width:430px;width:calc(100% - 32px);padding:26px 30px 23px;margin:auto;overflow:auto;max-height:94dvh;text-align:center;background:#fff8ed;color:#665044;border:1px solid #efd1a9;border-radius:25px;box-shadow:0 24px 100px #001b2166;font-family:var(--sans);color-scheme:light}
+.welcome-dialog::backdrop{background:#051f25bd;backdrop-filter:blur(8px)}
+.welcome-dialog[open]{animation:welcome-pop .45s cubic-bezier(.18,.8,.3,1.1)}
+.welcome-close{position:absolute;top:14px;right:14px;display:grid;place-items:center;width:32px;height:32px;padding:0;border:0;border-radius:50%;color:#9e7b64;background:#f2e5d5}
+.welcome-close:hover{background:#ebd5bb}.welcome-close svg{width:18px;height:18px}
+.welcome-badge{display:inline-block;border:1px solid #ead0aa;border-radius:20px;background:#f8ebd7;padding:3px 13px;font-size:13px;color:#a16837}
+.welcome-cat{display:block;width:270px;max-width:90%;height:auto;margin:7px auto 0}
+.welcome-dialog h2{font-family:var(--sans);font-weight:600;font-size:27px;line-height:1.5;color:#5a4539;margin:0 0 4px;letter-spacing:0}
+.welcome-dialog h2 span{color:#c1773e}.welcome-credit{margin:3px 0 13px;font-size:14px;color:#9c7c63}.welcome-credit strong{font-weight:600;color:#a96532}
+#welcome-description{font-size:16px;line-height:1.85;margin:0 0 20px;color:#7c6858}
+.welcome-start{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:13px 18px;border-radius:12px;border:1px solid #ce8b4d;background:#e7a65f;color:#4c3520;font-size:16px;font-weight:600;box-shadow:0 4px 0 #c9874930;transition:background .15s,transform .15s}
+.welcome-start:hover{background:#edb472;transform:translateY(-1px)}.welcome-start svg{width:23px;height:23px}
+.welcome-signoff{display:block;font-size:12px;color:#a48c77;margin-top:14px}
+button.creator-credit{display:flex;align-items:center;gap:7px;background:none;border:0;padding:0;color:#a3b6a0;font:14px var(--sans);cursor:pointer}
+button.creator-credit img{width:33px;height:30px;object-fit:contain}button.creator-credit:hover strong{color:#f0b96e}
+@keyframes welcome-pop{from{opacity:0;transform:translateY(18px) scale(.92)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:540px){dialog.welcome-dialog{padding:24px 24px 20px;border-radius:22px;max-height:93dvh}.welcome-cat{width:235px}.welcome-dialog h2{font-size:25px}#welcome-description{font-size:16px;margin-bottom:18px}}
+@media(max-height:650px){dialog.welcome-dialog{padding-top:18px;padding-bottom:15px}.welcome-cat{width:180px;margin-top:0}.welcome-dialog h2{font-size:24px}.welcome-credit{margin-bottom:9px}#welcome-description{margin-bottom:13px;font-size:15px}.welcome-signoff{margin-top:10px}}
+@media(prefers-reduced-motion:reduce){.welcome-dialog[open],.welcome-start{animation:none;transition:none}}

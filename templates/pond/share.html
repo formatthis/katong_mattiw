@@ -1,0 +1,12 @@
+{% load static %}
+<dialog class="share-dialog" id="share-dialog" aria-labelledby="share-title">
+  <button type="button" class="dialog-close icon-button" id="share-close" aria-label="ปิดหน้าแชร์"><svg><use href="#i-close"/></svg></button>
+  <span class="share-kicker">เก็บคืนนี้ไว้</span><h2 id="share-title">กระทงกับคำอธิษฐานของเรา</h2>
+  <div class="card-layout-options" role="group" aria-label="สัดส่วนภาพ"><button type="button" data-card-layout="post" aria-pressed="true">ภาพโพสต์</button><button type="button" data-card-layout="story" aria-pressed="false">สตอรี่</button></div>
+  <div class="share-card-preview"><img id="share-card-preview" alt="ภาพกระทงพร้อมรูป ชื่อ และคำอธิษฐาน"><p id="share-card-loading" role="status">กำลังจัดภาพให้…</p></div>
+  <p id="share-card-status" class="share-card-status" role="status"></p>
+  <a id="download-card" class="download-card" download>ดาวน์โหลดภาพ PNG</a>
+  <div class="social-share-buttons"><a id="share-facebook" class="facebook-button" target="_blank" rel="noopener noreferrer"><svg><use href="#i-facebook"/></svg> Facebook</a><button type="button" id="share-instagram" class="instagram-button"><svg><use href="#i-instagram"/></svg> Instagram</button></div>
+  <div id="instagram-fallback" class="instagram-fallback" hidden><p>บันทึกภาพแล้ว เลือกภาพนี้ลงโพสต์หรือสตอรี่ได้เลย</p><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">เปิด Instagram</a></div>
+  <button type="button" class="text-button" id="share-copy-link">คัดลอกลิงก์คำอธิษฐาน</button>
+</dialog>

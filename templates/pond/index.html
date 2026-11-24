@@ -1,0 +1,125 @@
+{% load static %}
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071e20">
+  <meta name="description" content="คืนลอย เลือกกระทง ใส่รูป เขียนคำอธิษฐาน ลอยเดี่ยวหรือลอยเป็นคู่ริมวัดไทย">
+  <title>คืนลอย • {% if is_lantern %}ลอยโคมออนไลน์{% else %}ลอยกระทงออนไลน์{% endif %}</title>
+  {% if shared_wish %}<meta property="og:type" content="website"><meta property="og:title" content="{{ share_title }}"><meta property="og:description" content="{{ share_description }}"><meta property="og:url" content="{{ share_canonical }}"><meta property="og:image" content="{{ share_image }}"><meta property="og:image:width" content="1080"><meta property="og:image:height" content="1350"><meta property="og:image:type" content="image/png"><meta property="og:locale" content="th_TH"><meta name="twitter:card" content="summary_large_image">{% endif %}
+  <link rel="icon" href="{% static 'pond/favicon.svg' %}" type="image/svg+xml">
+  <link rel="stylesheet" href="{% static 'pond/style.css' %}">
+  <link rel="stylesheet" href="{% static 'pond/festival.css' %}">
+  <link rel="stylesheet" href="{% static 'pond/everyday.css' %}?v=3">
+  <link rel="stylesheet" href="{% static 'pond/welcome.css' %}?v=1">
+  <link rel="stylesheet" href="{% static 'pond/riverside.css' %}?v=4">
+  <link rel="stylesheet" href="{% static 'pond/craft.css' %}?v=5">
+  <link rel="stylesheet" href="{% static 'pond/together.css' %}?v=2">
+  <script src="{% static 'pond/art-renderer.js' %}?v=5" defer></script>
+  <script src="{% static 'pond/studio.js' %}?v=5" defer></script>
+  <script src="{% static 'pond/sharing.js' %}?v=5" defer></script>
+  <script src="{% static 'pond/app.js' %}?v=7" defer></script>
+  <script src="{% static 'pond/welcome.js' %}?v=2" defer></script>
+  <script src="{% static 'pond/river.js' %}?v=5" defer></script>
+</head>
+<body data-scene="{{ kind }}" class="scene-{{ kind }}">
+  {{ designs|json_script:'custom-designs' }}
+  {{ pair_bootstrap|json_script:'pair-session-data' }}
+  {{ art_catalog|json_script:'art-catalog' }}
+  {{ shared_wish|json_script:'shared-wish-data' }}
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-lotus" viewBox="0 0 32 32"><path d="M16 25C5 25 3 18 3 12c6 0 10 3 13 8 3-5 7-8 13-8 0 6-2 13-13 13Z"/><path d="M16 22C8 17 11 9 16 4c5 5 8 13 0 18Z"/><path d="M16 26c-6 3-11 1-14-2m14 2c6 3 11 1 14-2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.7 6.3L21 12l-6.3 2.7L12 21l-2.7-6.3L3 12l6.3-2.7Z"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m4 18 5-5 4 3 4-6 4 7"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></symbol>
+    <symbol id="i-sound" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5Zm4 4c3 2 3 6 0 8m3-11c5 4 5 10 0 14"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 5c-3-3-7-1-8 1-1-2-5-4-8-1-4 4 1 10 8 15 7-5 12-11 8-15Z"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3c-1 7 2 15-8 16C2 20 0 7 20 3ZM5 22 16 9"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-4H14V7c0-1 .3-2 2-2h2V1h-3c-4 0-6 2-6 6v2H6v4h3v8"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#create">ข้ามไปเลือก{{ object_name }}</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="คืนลอย หน้าหลัก"><span class="brand-mark"><svg><use href="#i-lotus"/></svg></span><span>คืนลอย<small>KHUEN LOY</small></span></a>
+    <nav aria-label="เมนูหลัก"><a href="/" {% if not is_lantern %}class="nav-current" aria-current="page"{% endif %}>ลอยกระทง</a><a href="{% url 'lanterns' %}" {% if is_lantern %}class="nav-current" aria-current="page"{% endif %}>ลอยโคม</a><button type="button" id="help-open">เล่นยังไง?</button></nav>
+    <a class="header-cta" href="#create"><svg><use href="#i-spark"/></svg> {% if is_lantern %}ไปปล่อยโคมกัน{% else %}ไปลอยกันเลย{% endif %}</a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">{% if is_lantern %}ปล่อยโคมขึ้นฟ้า<em>เขียนคำขอ แล้วลอยไปด้วยกัน{% else %}คืนนี้ ลอยด้วยกันไหม<em>เลือกกระทงใบที่ชอบได้เลย{% endif %}</em></h1>
+      <p>{% if is_lantern %}เลือกสีโคม ใส่รูป แล้วเขียนสิ่งที่อยากขอ{% else %}มีทั้งใบตอง ดอกไม้ และกระทงรูปสัตว์<br class="mobile-break"> ใส่รูปตัวเองแล้วชวนเพื่อนมาลอยด้วยกัน{% endif %}</p>
+      <div class="scene-switch" aria-label="เลือกบรรยากาศ"><a href="/" {% if not is_lantern %}class="active" aria-current="page"{% endif %}><svg><use href="#i-lotus"/></svg> ลอยกระทง</a><a href="{% url 'lanterns' %}" {% if is_lantern %}class="active" aria-current="page"{% endif %}><svg><use href="#i-spark"/></svg> ลอยโคม</a></div>
+    </section>
+    <section class="experience" aria-label="ลอยกระทงออนไลน์">
+      <div class="pond-column">
+        <div class="pond" id="pond" data-background="{% static 'pond/thai-temple-night.png' %}" aria-label="{{ scene_title }} แตะ{{ object_name }}เพื่ออ่านคำขอ">
+          <div class="night-sky" aria-hidden="true"><div class="stars"></div><div class="moon"></div><div class="moon-halo"></div><div class="lantern lantern-one"></div><div class="lantern lantern-two"></div><div class="lantern lantern-three"></div><div class="lantern lantern-four"></div><div class="distant-tree tree-left"></div><div class="distant-tree tree-right"></div><div class="temple"><i></i><i></i><i></i></div></div>
+          <div class="water" aria-hidden="true"><div class="moon-reflection"></div><div class="water-lines"></div><div class="bank bank-left"></div><div class="bank bank-right"></div><div class="lily lily-one"></div><div class="lily lily-two"></div><div class="lily lily-three"></div></div>
+          <div class="scenery" aria-hidden="true"></div><div class="fireflies" id="fireflies" aria-hidden="true"></div>
+          <div class="pond-top"><div class="pond-label"><span class="live-dot"></span> {{ scene_title }}<small>แตะ{{ object_name }}เพื่ออ่านคำอธิษฐาน</small></div><div class="pond-controls"><button type="button" class="icon-button" id="sound-toggle" aria-label="เปิดเพลงหรือเสียงบรรยากาศ" aria-pressed="false" title="เปิดเพลง"><svg><use href="#i-sound"/></svg><span class="sound-slash"></span></button><button type="button" class="icon-button" id="fullscreen-toggle" aria-label="ขยายเต็มจอ" title="ขยายเต็มจอ"><svg><use href="#i-expand"/></svg></button></div></div>
+          <div id="krathong-layer" class="krathong-layer"></div>
+          <div class="pond-preview" id="pond-preview"><div class="own-preview"><div class="preview-boat" id="preview-boat"></div><span>ตัวอย่าง{{ object_name }}ของเรา</span></div></div>
+          <section class="pair-cover" id="pair-cover" hidden aria-label="{{ object_name }}ลอยคู่">
+            <div class="cover-frame">
+              <span class="cover-ornament" aria-hidden="true"></span>
+              <p class="cover-kicker"><span>ลอย{{ object_name }}คู่</span></p>
+              <h3 class="cover-names"><span id="cover-names-1"></span><svg aria-hidden="true"><use href="#i-heart"/></svg><span id="cover-names-2"></span></h3>
+              <div class="cover-boats">
+                <figure class="cover-boat" id="cover-slot-1"><div class="cover-art" id="cover-art-1"></div><figcaption><span class="ready-chip" id="cover-ready-1"></span></figcaption></figure>
+                <figure class="cover-boat" id="cover-slot-2"><div class="cover-art" id="cover-art-2"></div><figcaption><span class="ready-chip" id="cover-ready-2"></span></figcaption></figure>
+              </div>
+              <p class="cover-status" id="cover-status" aria-live="polite"></p>
+              <button type="button" class="pair-launch" id="pair-launch" hidden><span class="pair-launch-main"><svg aria-hidden="true"><use href="#i-heart"/></svg><span id="pair-launch-label">กดลอยพร้อมกัน</span></span><small id="pair-launch-hint"></small><i class="pair-launch-timer" aria-hidden="true"></i></button>
+            </div>
+          </section>
+          <div class="pair-countdown" id="pair-countdown" hidden><div class="countdown-glow"></div><div class="countdown-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-track" cx="60" cy="60" r="54"/><circle class="ring-sweep" id="countdown-sweep" cx="60" cy="60" r="54"/></svg><strong id="countdown-number" aria-live="assertive">3</strong></div><p id="countdown-caption">ลอยพร้อมกันใน</p></div>
+          <canvas id="fireworks" class="fireworks" aria-hidden="true"></canvas>
+          <div class="launch-ceremony" id="launch-ceremony" hidden><div class="ceremony-glow"></div><div id="ceremony-object" class="ceremony-object"></div><div class="ceremony-message" role="status"><span id="ceremony-kicker">ลอยเรียบร้อยแล้ว</span><h3 id="ceremony-title">ขอให้สมหวังนะ</h3><p id="ceremony-wish"></p><div class="ceremony-couple" id="ceremony-couple" hidden></div><div class="ceremony-blessing"><small><svg aria-hidden="true"><use href="#i-spark"/></svg> คำอวยพรจากคืนลอย</small><p id="ceremony-blessing"></p></div><button type="button" id="ceremony-view">ดูคำอธิษฐานของเรา</button><button type="button" id="ceremony-close" aria-label="ปิดเอฟเฟกต์">กลับไปดูต่อ</button></div></div>
+          <div class="pond-bottom"><span><svg><use href="#i-moon"/></svg> แตะ{{ object_name }} แอบอ่านคำขอได้</span><span><b id="pond-count">0</b> {{ object_name }}{% if is_lantern %}บนฟ้า{% else %}ในสระ{% endif %}</span></div>
+          <div class="pond-loading" id="pond-loading">กำลังเปิด{% if is_lantern %}ลานโคม{% else %}สระ{% endif %}…</div>
+          <div class="pond-notice" id="pond-notice" role="status" hidden></div>
+        </div>
+        <div class="pond-caption"><span><svg><use href="#i-leaf"/></svg> ลอยออนไลน์ ไม่เพิ่มขยะ</span><span>{% if is_lantern %}ไม่ใช้ไฟจริง{% else %}ชวนเพื่อนมาลอยด้วยกันได้{% endif %}</span></div>
+        <div class="music-player"><button type="button" id="music-play" aria-label="เปิดเพลง" aria-pressed="false"><span id="music-play-icon">▶</span></button><div class="music-track"><span>กดเล่นเพื่อเปิดเสียง</span><strong>{% if music %}{{ music.title }}{% else %}เสียงบรรยากาศคืนลอย{% endif %}</strong></div><div class="equalizer" id="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></div><label class="volume-control"><svg><use href="#i-sound"/></svg><input type="range" id="music-volume" min="0" max="100" value="45" aria-label="ความดังเพลง"></label></div>
+        {% if music %}<audio id="background-music" preload="none" loop src="{{ music.audio.url }}"></audio>{% endif %}
+      </div>
+      <aside class="create-card" id="create">
+        <div class="card-heading"><span class="small-lotus"><svg><use href="{% if is_lantern %}#i-spark{% else %}#i-lotus{% endif %}"/></svg></span><div><h2>เลือก{{ object_name }}ของเรา</h2></div></div>
+        <p class="card-intro">เลือกแบบที่ชอบ แล้วเขียนคำอธิษฐานได้เลย</p>
+        <section class="pair-session-panel" id="pair-session-panel" aria-live="polite" hidden><span class="pair-room-label">ลอยด้วยกันสองคน</span><h3 id="pair-status-title"></h3><p id="pair-status-description"></p><div class="pair-members" id="pair-members"></div><div id="pair-share"><label for="pair-invite-link">ลิงก์สำหรับอีกคน</label><div class="pair-link-row"><input type="text" id="pair-invite-link" readonly aria-label="ลิงก์เชิญลอยคู่"><button type="button" id="copy-pair-link">คัดลอก</button></div><span id="pair-link-status" role="status"></span></div><a class="pair-new-round" href="{% if is_lantern %}{% url 'lanterns' %}{% else %}{% url 'index' %}{% endif %}">เริ่มลอยรอบใหม่</a></section>
+        <form id="krathong-form" action="{{ api_url }}" data-feed-url="{{ api_url }}" method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <fieldset class="float-mode" id="float-mode"><legend>คืนนี้ลอยแบบไหน?</legend><div class="float-mode-options"><label><input type="radio" name="mode" value="solo" checked><span><svg><use href="#i-lotus"/></svg> ลอยเดี่ยว</span></label><label><input type="radio" name="mode" value="couple"><span><svg><use href="#i-heart"/></svg> ลอยเป็นคู่</span></label></div><p id="mode-description">เลือกกระทงของเรา แล้วลอยได้เลย</p></fieldset>
+          <fieldset class="participant-fields" id="participant-fields">
+          <div class="editor-mode-switch" role="group" aria-label="วิธีเลือกแบบ"><button type="button" data-edit-mode="preset" aria-pressed="true">เลือกแบบสำเร็จ</button><button type="button" data-edit-mode="studio" aria-pressed="false">แต่งเอง · Custom</button></div>
+          <div id="preset-collection">
+          <fieldset class="style-field"><legend>แบบ{{ object_name }} <span class="design-count">{{ styles|length }} แบบ{% if designs %} + แบบเพิ่มเติม{% endif %}</span></legend>{% if not is_lantern %}<div class="design-filters" role="group" aria-label="หมวดกระทง"><button type="button" data-category="all" aria-pressed="true">ทั้งหมด</button><button type="button" data-category="classic" aria-pressed="false">ดั้งเดิม</button><button type="button" data-category="animals" aria-pressed="false">สัตว์</button><button type="button" data-category="food" aria-pressed="false">ของกิน</button><button type="button" data-category="other" aria-pressed="false">อื่น ๆ</button>{% if designs %}<button type="button" data-category="custom" aria-pressed="false">เพิ่มเติม</button>{% endif %}</div>{% endif %}<div class="style-options" id="design-gallery">{% for style in styles %}<label class="style-option" data-group="{{ style.category }}"><input type="radio" name="style" value="{{ style.value }}" {% if forloop.first %}checked{% endif %}><span class="style-art" data-style="{{ style.value }}"></span><span class="style-name">{{ style.label }}</span><i><svg><use href="#i-check"/></svg></i></label>{% endfor %}{% for design in designs %}<label class="style-option" data-group="custom"><input type="radio" name="style" value="custom:{{ design.id }}"><span class="style-art" data-style="custom:{{ design.id }}"></span><span class="style-name">{{ design.name }}</span><i><svg><use href="#i-check"/></svg></i></label>{% endfor %}</div><p class="field-error" data-error="style"></p><p class="field-error" data-error="design"></p><p class="selection-note" aria-live="polite">เลือกอยู่: <strong id="selected-style">{{ styles.0.label }}</strong></p></fieldset>
+          </div>
+          {% include 'pond/studio.html' %}
+          <div class="field"><div class="label-row"><label for="portrait">ใส่รูปบน{{ object_name }}</label><span id="portrait-requirement">ไม่ใส่ก็ได้</span></div><div class="upload-wrap"><label for="portrait" class="upload-area" id="upload-area"><span class="upload-icon" id="upload-icon"><svg><use href="#i-image"/></svg></span><img id="upload-preview" alt="ตัวอย่างรูปบน{{ object_name }}" hidden><span class="upload-copy"><strong id="upload-title">เลือกรูปจากเครื่อง</strong><small>JPG, PNG, WEBP · ไม่เกิน 5 MB</small></span><input type="file" name="portrait" id="portrait" accept="image/jpeg,image/png,image/webp"></label><button type="button" class="remove-photo" id="remove-photo" aria-label="ลบรูปที่เลือก" hidden><svg><use href="#i-close"/></svg></button></div><p class="field-error" data-error="portrait"></p></div>
+          <div class="field"><div class="label-row"><label for="name">ชื่อเล่น</label><span>ไม่ใส่ก็ได้</span></div><input type="text" id="name" name="name" maxlength="40" placeholder="อยากให้เรียกว่าอะไร" autocomplete="nickname"><p class="field-error" data-error="name"></p></div>
+          <div class="field wish-field"><div class="label-row"><label for="wish">อยากขออะไร <span class="required">*</span></label><span id="wish-count">0 / 280</span></div><textarea id="wish" name="wish" rows="3" maxlength="280" required placeholder="ขอให้ปีนี้มีเรื่องดี ๆ เข้ามาเยอะ ๆ"></textarea><div class="wish-prompts"><button type="button" data-wish="ขอให้ทำงานราบรื่น มีเงินเก็บ และมีเวลาพักมากขึ้น">เรื่องงาน</button><button type="button" data-wish="ขอให้ได้เจอคนที่คุยกันรู้เรื่อง และอยู่ด้วยแล้วสบายใจ">ความรัก</button><button type="button" data-wish="ขอให้ตัวเองกับคนที่รักสุขภาพแข็งแรง มีความสุขในทุก ๆ วัน">สุขภาพ</button></div><p class="field-error" data-error="wish"></p></div>
+          <input type="text" name="website" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-error" id="form-error" role="alert" hidden></div>
+          <button type="submit" class="float-button" id="float-button"><svg><use href="{% if is_lantern %}#i-spark{% else %}#i-lotus{% endif %}"/></svg><span>{% if is_lantern %}ปล่อยโคม{% else %}ลอยกระทงใบนี้{% endif %}</span></button>
+          </fieldset>
+        </form>
+        <section class="my-krathong-card" id="my-krathong-card" hidden aria-labelledby="my-krathong-title"><span class="receipt-label">ลอยเรียบร้อยแล้ว</span><div class="receipt-summary"><div id="receipt-art"></div><div><h3 id="my-krathong-title">กระทงของเรา</h3><p id="receipt-name"></p></div></div><p id="receipt-wish"></p><a id="receipt-download" class="download-card" download>ดาวน์โหลดภาพพร้อมคำอวยพร</a><div class="social-share-buttons"><a id="receipt-facebook" class="facebook-button" target="_blank" rel="noopener noreferrer"><svg><use href="#i-facebook"/></svg> Facebook</a><button type="button" id="receipt-instagram" class="instagram-button"><svg><use href="#i-instagram"/></svg> Instagram</button></div><button type="button" id="receipt-card-options" class="text-button">ดูภาพ / เปลี่ยนเป็นสตอรี่</button></section>
+      </aside>
+    </section>
+    <section class="wishes-section" id="wishes" aria-labelledby="wishes-title"><div class="section-title"><div><h2 id="wishes-title">คนที่ลอยด้วยกันคืนนี้</h2></div><div class="wishes-controls"><button type="button" id="wishes-pause" aria-pressed="false">พักการเลื่อน</button><span class="wish-total"><svg><use href="#i-heart"/></svg><span id="total-count">0</span> คำอธิษฐาน</span></div></div><div class="wish-marquee" id="wish-marquee" aria-label="คำอธิษฐานล่าสุด เลื่อนวนอัตโนมัติ พักได้ด้วยปุ่มพักการเลื่อน"><div class="wish-grid" id="wish-grid"></div></div><div class="empty-wishes" id="empty-wishes" hidden><svg><use href="#i-spark"/></svg><p>ยังไม่มีใครลอยเลย</p><span>เริ่มเป็นคนแรก แล้วส่งลิงก์ชวนเพื่อนมากัน</span></div></section>
+    <section class="closing"><svg><use href="#i-lotus"/></svg><p>สุขสันต์วันลอยกระทง</p><span>ขอให้สมหวังในสิ่งที่ตั้งใจ</span></section>
+  </main>
+  <footer><a href="/" class="footer-brand">คืนลอย <span>· ลอยกระทงออนไลน์</span></a><button type="button" id="footer-help" class="text-button">เล่นยังไง?</button><button type="button" class="creator-credit" id="about-mattiw" aria-label="ผู้จัดทำ mattiw"><img src="{% static 'pond/mattiw-cat.svg' %}" width="33" height="30" alt="">ผู้จัดทำ <strong>mattiw</strong><span class="credit-dot"></footer>
+  {% include 'pond/welcome.html' %}
+  {% include 'pond/share.html' %}
+  <div class="toast" id="toast" role="status" hidden></div>
+  <dialog id="wish-dialog" class="wish-dialog"><button type="button" class="dialog-close icon-button" data-close aria-label="ปิด"><svg><use href="#i-close"/></svg></button><span class="overline">คำอธิษฐาน</span><div class="detail-boat" id="detail-boat"></div><h2 id="detail-name"></h2><p class="detail-wish" id="detail-wish"></p><time id="detail-date"></time><div class="detail-partner" id="detail-partner" hidden></div><div class="detail-share-actions"><a id="detail-download" class="download-card" download>ดาวน์โหลดภาพพร้อมคำอวยพร</a><div class="social-share-buttons"><a id="detail-facebook" class="facebook-button" target="_blank" rel="noopener noreferrer"><svg><use href="#i-facebook"/></svg> Facebook</a><button type="button" id="detail-instagram" class="instagram-button"><svg><use href="#i-instagram"/></svg> Instagram</button></div><button type="button" id="detail-card-options" class="text-button">ดูภาพ / เลือกขนาดสตอรี่</button></div><button type="button" class="secondary-button" id="share-wish">คัดลอกลิงก์</button><button type="button" class="text-button" data-close>กลับไป{% if is_lantern %}ดูโคม{% else %}ดูสระ{% endif %}ต่อ</button></dialog>
+  <dialog id="help-dialog"><button type="button" class="dialog-close icon-button" data-close aria-label="ปิด"><svg><use href="#i-close"/></svg></button><h2>ลอยยังไง?</h2><ol class="help-steps"><li><strong>เลือกลอยเดี่ยวหรือลอยคู่</strong><p>ลอยเดี่ยวเลือกกระทงแล้วเขียนคำขอได้เลย ถ้าลอยคู่ให้ใส่รูปของเราด้วย</p></li><li><strong>เขียนคำอธิษฐานแล้วกดลอย</strong><p>รอดูพลุ แล้วแตะกระทงหรือโคมเพื่อเปิดคำอธิษฐาน</p></li><li><strong>ถ้าลอยคู่ ส่งลิงก์ให้อีกคน</strong><p>อีกคนเข้าลิงก์ ใส่รูป เลือกกระทง และเขียนคำอวยพรของตัวเอง ลิงก์รับได้อีกหนึ่งคน ภายใน 7 วัน</p></li><li><strong>กดลอยพร้อมกัน</strong><p>พอเข้ามาครบสองคน ทั้งคู่กดปุ่ม “กดลอยพร้อมกัน” ภายใน 20 วินาที ระบบจะนับ 3 2 1 พร้อมกันทั้งสองเครื่อง แล้วจุดพลุ</p></li></ol><button class="float-button" type="button" data-close>เข้าใจแล้ว</button></dialog>
+  <noscript><div class="noscript">กรุณาเปิด JavaScript เพื่อแสดงสระและลอยกระทงออนไลน์</div></noscript>
+</body>
+</html>
