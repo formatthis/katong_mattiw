@@ -1,10 +1,12 @@
-# Render Blueprint: free web service + free Postgres.
+# Render Blueprint: free web service using an existing Render Postgres (Singapore).
 # Render dashboard → New → Blueprint → pick this repository.
+# DATABASE_URL: paste the database's "Internal Database URL" (same region, no SSL setup needed).
 services:
   - type: web
     name: khuenloy
     runtime: python
     plan: free
+    region: singapore
     buildCommand: bash build.sh
     startCommand: gunicorn loykrathong.wsgi:application --workers 2 --threads 4 --timeout 60
     healthCheckPath: /api/krathongs/
@@ -16,18 +18,10 @@ services:
       - key: DJANGO_SECRET_KEY
         generateValue: true
       - key: DATABASE_URL
-        fromDatabase:
-          name: khuenloy-db
-          property: connectionString
+        sync: false
       - key: DJANGO_SUPERUSER_USERNAME
         sync: false
       - key: DJANGO_SUPERUSER_EMAIL
         sync: false
       - key: DJANGO_SUPERUSER_PASSWORD
         sync: false
-
-databases:
-  - name: khuenloy-db
-    plan: free
-    databaseName: khuenloy
-    user: khuenloy
